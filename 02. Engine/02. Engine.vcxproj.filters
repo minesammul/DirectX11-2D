@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EngineCode">
+      <UniqueIdentifier>{a817b64d-2f36-4194-a329-f65a28e42fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCode">
+      <UniqueIdentifier>{6658a2d6-c08f-45a8-b3f2-ecb20d9e0741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScriptCode">
+      <UniqueIdentifier>{f6e22076-526c-4f02-9ffd-58b42569f0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\01. Header">
+      <UniqueIdentifier>{54515943-5526-4b7e-bf3a-e15af32fc641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\03. GameObject">
+      <UniqueIdentifier>{014b5d46-d327-4a46-91bb-9bda3ceab2d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\03. GameObject\Component">
+      <UniqueIdentifier>{b833bb6a-8457-42ef-8cf0-ced591fe3716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\02. Manager">
+      <UniqueIdentifier>{f3c66bfb-c607-4da2-9bea-d9f86e9f5eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource">
+      <UniqueIdentifier>{1fbfda66-6fa8-4615-af17-e65cbecc2b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Mesh">
+      <UniqueIdentifier>{5a2184e4-0199-4913-87c9-adb266839cf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Texture">
+      <UniqueIdentifier>{3fe2dac9-49ce-403a-8438-187cce441f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Sound">
+      <UniqueIdentifier>{e276210a-5864-4cc9-b6d8-089ca1983c79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Shader">
+      <UniqueIdentifier>{145094e0-4818-42b7-9fc3-c936bb045298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Material">
+      <UniqueIdentifier>{c3332745-6f6e-4140-832b-099cfb406e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\05. Rendering">
+      <UniqueIdentifier>{994609f9-44b4-449c-b36f-ba4c96193dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\06. Module">
+      <UniqueIdentifier>{4c9de096-2ffb-4fe5-b4ad-fca892f6f7e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Default">
+      <UniqueIdentifier>{abbb8783-0381-4d91-8b40-ad54849a683d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\04. Resource\Prefab">
+      <UniqueIdentifier>{72e21ec9-fabd-438f-aec7-6a6ddc07d6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EngineCode\05. Rendering\State">
+      <UniqueIdentifier>{92fe2562-d6c9-4023-b2f1-e834daddbd9f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="func.h">
+      <Filter>EngineCode\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>EngineCode\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="struct.h">
+      <Filter>EngineCode\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>EngineCode\01. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PathMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>EngineCode\03. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>EngineCode</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>EngineCode\04. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>EngineCode\04. Resource\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRender.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>EngineCode\04. Resource\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ResMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>EngineCode\04. Resource\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>EngineCode\04. Resource\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>EngineCode\04. Resource\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Script.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer.h">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Prefab.h">
+      <Filter>EngineCode\04. Resource\Prefab</Filter>
+    </ClInclude>
+    <ClInclude Include="ResPtr.h">
+      <Filter>EngineCode\04. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMgr.h">
+      <Filter>EngineCode\05. Rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClInclude>
+    <ClInclude Include="BlendState.h">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthStencilState.h">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClInclude>
+    <ClInclude Include="SamplerState.h">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2D.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstBuffer.h">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="EventMgr.h">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator2D.h">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation2D.h">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClInclude>
+    <ClInclude Include="MousePicking.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="func.cpp">
+      <Filter>EngineCode\01. Header</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PathMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>EngineCode\03. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>EngineCode</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>EngineCode\04. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>EngineCode\04. Resource\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRender.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>EngineCode\04. Resource\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ResMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>EngineCode\04. Resource\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>EngineCode\04. Resource\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>EngineCode\04. Resource\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Script.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer.cpp">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Default</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Prefab.cpp">
+      <Filter>EngineCode\04. Resource\Prefab</Filter>
+    </ClCompile>
+    <ClCompile Include="ResPtr.cpp">
+      <Filter>EngineCode\04. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMgr.cpp">
+      <Filter>EngineCode\05. Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClCompile>
+    <ClCompile Include="BlendState.cpp">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthStencilState.cpp">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClCompile>
+    <ClCompile Include="SamplerState.cpp">
+      <Filter>EngineCode\05. Rendering\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider2D.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstBuffer.cpp">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="EventMgr.cpp">
+      <Filter>EngineCode\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator2D.cpp">
+      <Filter>EngineCode\03. GameObject\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation2D.cpp">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClCompile>
+    <ClCompile Include="MousePicking.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="std.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="value.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+    <FxCompile Include="effect.fx">
+      <Filter>ShaderCode</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
