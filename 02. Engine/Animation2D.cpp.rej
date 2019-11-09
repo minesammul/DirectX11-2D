@@ -1,0 +1,13 @@
+diff a/DirectX11/02. Engine/Animation2D.cpp b/DirectX11/02. Engine/Animation2D.cpp	(rejected hunks)
+@@ -98,9 +98,9 @@
+ 		
+ 		UINT iNextFrm = m_iCurFrm + 1;
+ 
+-		if (iNextFrm >= m_vecFrm.size())
++		if (iNextFrm > endFrame)
+ 		{
+-			iNextFrm = m_vecFrm.size() - 1; // ������ ������ ����
++			iNextFrm = endFrame; // ������ ������ ����
+ 			m_fAccTime = 0.f;
+ 			m_bFinish = true;
+ 			m_bPlay = false;

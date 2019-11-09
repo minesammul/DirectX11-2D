@@ -1,0 +1,34 @@
+diff a/DirectX11/02. Engine/define.h b/DirectX11/02. Engine/define.h	(rejected hunks)
+@@ -50,17 +50,29 @@
+ 	SCRIPT,		// 대본, 역할, 
+ };
+ 
++//enum class RES_TYPE
++//{
++//	MATERIAL,
++//	PREFAB,
++//	MESH,
++//	SHADER,
++//	TEXTURE,	
++//	SOUND,		
++//	END
++//};
++
+ enum class RES_TYPE
+ {
+ 	MATERIAL,
+-	PREFAB,
+ 	MESH,
+ 	SHADER,
+-	TEXTURE,	
+-	SOUND,		
++	TEXTURE,
++	SOUND,
++	PREFAB,
+ 	END
+ };
+ 
++
+ enum class SAMPLER_TYPE
+ {
+ 	DEFAULT,
