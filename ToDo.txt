@@ -1,0 +1,61 @@
+// GameObject 간의 계층 구조 (완료)
+1. Transform 의 정보(위치, 크기, 회전) 는 부모로 부터의 상대적인 정보
+   따라서 최종 월드 스페이스 기준 정보라고 볼 수 없음
+
+2. Transform 의 최종 월드 정보는 부모의 Data 를 누적시켜서 구해야 함
+   따라서 계층적으로 부모부터 정보가 update, lateupdate, finalupdate 되어야 함
+
+3. 반면에 rendering 은 계층구조간에 같은 Layer 에 들어있다는 보장이 없기 때문에
+   계층적인 순서로 실행 되서는 안되고, Layer 에 속해있는 오브젝트 단위로 rendering 이 되어야 한다.
+
+4. Object 간의 부모 자식관계 설정, 해제 ---> 이벤트 처리
+   
+
+// Event 처리 (완료)
+1. Object 생성, 삭제
+
+2. Object Destroy 정보
+
+3. 부조 자식 관계 설정
+
+// Tool
+1. 자식 윈도우로 설정된 Dialog 윈도우의 키 입력 이벤트 정상 처리(완료)
+
+2. GameObject 타겟팅 변경
+  - HierachyView 화면의 GameObject 클릭 시(완료)
+  - GameView 화면의 GameObject 클릭 시 (미완)
+
+3. ComponentDlg 만들기
+ - 상속으로 구현
+ - TransformDlg(완료)
+ - MeshRenderDlg(완료)
+ - CameraDlg(완료)
+ - Collider2DDlg(완료)
+ - Animator2DDlg(완료)
+
+4. ScriptDlg 만들기
+ - Script <-> Engine 분리 구현 (완료)
+ - GameObject 보유 Script 구별 기능(완료)
+ - ScriptMgr 자동화
+
+5. 마우스 피킹
+
+6. 재생, 정지 기능
+ - Tool Camera 와 Scene Camera 분리
+ 
+
+6. Save & Load
+ - Scene 재생, 일시정지, 정지
+ - Scene 저장, 불러오기 기능
+
+
+
+7. FMOD 사운드
+ 
+
+
+
+
+
+
+
