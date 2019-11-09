@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{bd8384e3-ff4f-456d-9f03-cb714b8e890c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{7e26e184-4b10-4467-be74-31430341dd0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{49f6b3d1-3d14-4aff-8c99-8dcbbd959b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View">
+      <UniqueIdentifier>{bd3cb0b4-048a-4c8a-934f-aba778c7e457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. FrameWindow">
+      <UniqueIdentifier>{49b8e324-dab0-4676-8884-ba818e3bb34e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. App">
+      <UniqueIdentifier>{0a54c036-0a69-4205-b16a-7665087525f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View\GameView">
+      <UniqueIdentifier>{a16a17a1-522e-455d-8664-b30a551bbd06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View\HierachyView">
+      <UniqueIdentifier>{afb7c3d6-93e2-4037-8dd1-d17fec06eaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View\ComponentView">
+      <UniqueIdentifier>{ab9698ab-3eb2-4877-b6f9-5d8493e594c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View\DebugView">
+      <UniqueIdentifier>{bd738ce7-6c19-48c5-9023-b2529b2a93fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. View\BtnView">
+      <UniqueIdentifier>{b6bdb4c1-ca77-4fb1-921b-b7f8fd918a40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog">
+      <UniqueIdentifier>{4636a9ff-c623-4c76-945f-e718fca38bbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog\ComDlg">
+      <UniqueIdentifier>{bea67db4-40c6-4c64-b04b-863cfdfd81c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog\ListDlg">
+      <UniqueIdentifier>{9d025c1f-e393-4252-8782-90154163570f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog\AddAnimDlg">
+      <UniqueIdentifier>{7f1ceb55-6b9b-4425-9726-af0da1637e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog\HierachyDlg">
+      <UniqueIdentifier>{e375a45a-34e0-4aa0-99f0-fc736cd67b89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. Dialog\ResInfoDlg">
+      <UniqueIdentifier>{1b269050-f8f9-4d7d-b4a6-9aaac5b15726}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MySplitterWnd.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>02. FrameWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolApp.h">
+      <Filter>01. App</Filter>
+    </ClInclude>
+    <ClInclude Include="GameView.h">
+      <Filter>03. View\GameView</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentView.h">
+      <Filter>03. View\ComponentView</Filter>
+    </ClInclude>
+    <ClInclude Include="HierachyView.h">
+      <Filter>03. View\HierachyView</Filter>
+    </ClInclude>
+    <ClInclude Include="BtnView.h">
+      <Filter>03. View\BtnView</Filter>
+    </ClInclude>
+    <ClInclude Include="DbgView.h">
+      <Filter>03. View\DebugView</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ListDlg.h">
+      <Filter>04. Dialog\ListDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Animator2DDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AddAnimDlg.h">
+      <Filter>04. Dialog\AddAnimDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectDlg.h">
+      <Filter>04. Dialog\HierachyDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AddAnimFile.h">
+      <Filter>04. Dialog\AddAnimDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceDlg.h">
+      <Filter>04. Dialog\HierachyDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="ResInfoDlg.h">
+      <Filter>04. Dialog\ResInfoDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionLayer.h">
+      <Filter>03. View\BtnView</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialDlg.h">
+      <Filter>04. Dialog\ResInfoDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AddComponentDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider2DDlg.h">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AddLayerDlg.h">
+      <Filter>03. View\BtnView</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MySplitterWnd.cpp">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>02. FrameWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolApp.cpp">
+      <Filter>01. App</Filter>
+    </ClCompile>
+    <ClCompile Include="GameView.cpp">
+      <Filter>03. View\GameView</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentView.cpp">
+      <Filter>03. View\ComponentView</Filter>
+    </ClCompile>
+    <ClCompile Include="HierachyView.cpp">
+      <Filter>03. View\HierachyView</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnView.cpp">
+      <Filter>03. View\BtnView</Filter>
+    </ClCompile>
+    <ClCompile Include="DbgView.cpp">
+      <Filter>03. View\DebugView</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ListDlg.cpp">
+      <Filter>04. Dialog\ListDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Animator2DDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAnimDlg.cpp">
+      <Filter>04. Dialog\AddAnimDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectDlg.cpp">
+      <Filter>04. Dialog\HierachyDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAnimFile.cpp">
+      <Filter>04. Dialog\AddAnimDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceDlg.cpp">
+      <Filter>04. Dialog\HierachyDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ResInfoDlg.cpp">
+      <Filter>04. Dialog\ResInfoDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionLayer.cpp">
+      <Filter>03. View\BtnView</Filter>
+    </ClCompile>
+    <ClCompile Include="MaterialDlg.cpp">
+      <Filter>04. Dialog\ResInfoDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AddComponentDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider2DDlg.cpp">
+      <Filter>04. Dialog\ComDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AddLayerDlg.cpp">
+      <Filter>03. View\BtnView</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="My03Tool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\My03Tool.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\03. Tool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
