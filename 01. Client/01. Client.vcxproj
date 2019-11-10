@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)Project\Include\Engine;$(SolutionDir)Project\Include\DirectXTex\;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)Project\Library\Engine\x86\;$(SolutionDir)Project\Library\DirectXTex\x86\;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Project\Include\Engine;$(SolutionDir)Project\Include\DirectXTex\;$(SolutionDir)Project\Include\Script;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Project\Library\Engine\x86\;$(SolutionDir)Project\Library\DirectXTex\x86\;$(SolutionDir)Project\Library\Script\x86\;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)bin_debug\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

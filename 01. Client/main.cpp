@@ -6,12 +6,23 @@
 
 #include <func.h>
 #include <core.h>
+#include <Scene.h>
+#include <SceneMgr.h>
+#include <TimeMgr.h>
 
 
 #ifdef _DEBUG
 #pragma comment(lib, "Uryty_debug.lib")
 #else
 #pragma comment(lib, "Uryty.lib")
+#endif
+
+#include <SaveLoadMgr.h>
+
+#ifdef _DEBUG
+#pragma comment(lib, "Script_Debug.lib")
+#else
+#pragma comment(lib, "Script.lib")
 #endif
 
 #define MAX_LOADSTRING 100
@@ -63,7 +74,19 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		return 0;
 	}
 
-	
+	CCore::GetInst()->SetState(SCENE_STATE::LOAD);
+	CSaveLoadMgr::LoadScene(L"D:\\GitHub Project\\DirectX11 2D Portfolio\\Project\\bin\\content\\Scene\\FinalStage8.scene");
+
+	CCore::GetInst()->SetState(SCENE_STATE::STOP);
+
+	CCore::GetInst()->progress();
+
+	CScene* pCurScene = CSceneMgr::GetInst()->GetCurScene();
+
+	pCurScene->awake();
+	pCurScene->start();
+
+	CCore::GetInst()->Play(true);
 
     // 기본 메시지 루프입니다:
     while (true)
