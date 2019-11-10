@@ -23,8 +23,8 @@ public:
 
 	static PlayerActionStateIdle* GetInstance()
 	{
-		static PlayerActionStateIdle* instance = new PlayerActionStateIdle;
-		return instance;
+		static PlayerActionStateIdle instance;
+		return &instance;
 	}
 };
 

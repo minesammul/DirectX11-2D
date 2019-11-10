@@ -31,35 +31,61 @@ CPlayerScript::CPlayerScript()
 
 CPlayerScript::~CPlayerScript()
 {
-	if (PlayerActionStateIdle::GetInstance() != nullptr)
+	if (actionState != nullptr)
 	{
-		actionState = PlayerActionStateIdle::GetInstance();
+		actionState = nullptr;
 		delete actionState;
 	}
 
-	if (PlayerActionStateJump::GetInstance() != nullptr)
-	{
-		actionState = PlayerActionStateJump::GetInstance();
-		delete actionState;
-	}
+	//if (PlayerActionStateIdle::GetInstance() != nullptr)
+	//{
+	//	//actionState = PlayerActionStateIdle::GetInstance();
+	//	//if (actionState != nullptr)
+	//	//{
+	//	//	delete actionState;
+	//	//	actionState = nullptr;
+	//	//}
+	//}
 
-	if (PlayerActionStateMove::GetInstance() != nullptr)
-	{
-		actionState = PlayerActionStateMove::GetInstance();
-		delete actionState;
-	}
+	//if (PlayerActionStateJump::GetInstance() != nullptr)
+	//{
+	///*	actionState = PlayerActionStateJump::GetInstance();
+	//	if (actionState != nullptr)
+	//	{
+	//		delete actionState;
+	//		actionState = nullptr;
+	//	}*/
+	//}
 
-	if (PlayerActionStateDash::GetInstance() != nullptr)
-	{
-		actionState = PlayerActionStateDash::GetInstance();
-		delete actionState;
-	}
+	//if (PlayerActionStateMove::GetInstance() != nullptr)
+	//{
+	///*	actionState = PlayerActionStateMove::GetInstance();
+	//	if (actionState != nullptr)
+	//	{
+	//		delete actionState;
+	//		actionState = nullptr;
+	//	}*/
+	//}
 
-	if (PlayerActionStateSit::GetInstance() != nullptr)
-	{
-		actionState = PlayerActionStateSit::GetInstance();
-		delete actionState;
-	}
+	//if (PlayerActionStateDash::GetInstance() != nullptr)
+	//{
+	//	//actionState = PlayerActionStateDash::GetInstance();
+	//	//if (actionState != nullptr)
+	//	//{
+	//	//	delete actionState;
+	//	//	actionState = nullptr;
+	//	//}
+	//}
+
+	//if (PlayerActionStateSit::GetInstance() != nullptr)
+	//{
+	//	//actionState = PlayerActionStateSit::GetInstance();
+	//	//if (actionState != nullptr)
+	//	//{
+	//	//	delete actionState;
+	//	//	actionState = nullptr;
+	//	//}
+	//}
 
 }
 

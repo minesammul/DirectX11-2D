@@ -22,9 +22,9 @@ public:
 	virtual void Update(CPlayerScript * player) override;
 	static PlayerActionStateMove* GetInstance()
 	{
-		static PlayerActionStateMove* instance = new PlayerActionStateMove;
-		instance->moveEffectOutputTime = 0.f;
-		return instance;
+		static PlayerActionStateMove instance;
+		instance.moveEffectOutputTime = 0.f;
+		return &instance;
 	}
 
 };

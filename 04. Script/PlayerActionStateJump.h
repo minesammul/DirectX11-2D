@@ -39,8 +39,8 @@ public:
 
 	static PlayerActionStateJump* GetInstance()
 	{
-		static PlayerActionStateJump* instance = new PlayerActionStateJump;
-		return instance;
+		static PlayerActionStateJump instance;
+		return &instance;
 	}
 
 	void SetJumpPower(float jumpPower) { nowJumpPower = jumpPower; }

@@ -30,9 +30,9 @@ public:
 
 	static PlayerActionStateDash* GetInstance()
 	{
-		static PlayerActionStateDash* instance = new PlayerActionStateDash;
-		instance->dashAfterImageOutputTime = 0.f;
-		return instance;
+		static PlayerActionStateDash instance;
+		instance.dashAfterImageOutputTime = 0.f;
+		return &instance;
 	}
 
 	void SetDashDirection(Vec3 direction) { dashDirection = direction; }

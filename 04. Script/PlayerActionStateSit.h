@@ -13,8 +13,8 @@ public:
 
 	static PlayerActionStateSit* GetInstance()
 	{
-		static PlayerActionStateSit* instance = new PlayerActionStateSit;
-		return instance;
+		static PlayerActionStateSit instance;
+		return &instance;
 	}
 
 };
