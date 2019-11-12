@@ -12,6 +12,8 @@
 #include <Camera.h>
 #include <CollisionMgr.h>
 
+vector<bool> CSaveLoadMgr::m_LayerCollisions;
+
 CSaveLoadMgr::CSaveLoadMgr(){}
 CSaveLoadMgr::~CSaveLoadMgr(){}
 
@@ -371,4 +373,49 @@ CGameObject * CSaveLoadMgr::LoadGameObject(FILE * _pFile)
 	}
 
 	return pObject;
+}
+
+CScene * CSaveLoadMgr::GetScene(const wstring & _strPath)
+{
+	FILE* pFile = nullptr;
+	_wfopen_s(&pFile, _strPath.c_str(), L"rb");
+
+	// 리소스 불러오기
+	LoadResource(pFile);
+
+	// Scene 불러오기
+	CScene* pScene = new CScene;
+	for (UINT i = 0; i < MAX_LAYER; ++i)
+	{
+		CLayer* pLayer = LoadLayer(pFile, i);
+		if (nullptr != pLayer)
+			pScene->AddLayer(pLayer, i);
+	}
+
+	
+	vector<bool> layerCollisions;
+	for (UINT layerIndex = 0; layerIndex < MAX_LAYER; layerIndex++)
+	{
+		for (UINT checkLayerIndex = layerIndex; checkLayerIndex < MAX_LAYER; checkLayerIndex++)
+		{
+			CLayer* layer = pScene->GetLayer(layerIndex);
+			CLayer* checkLayer = pScene->GetLayer(checkLayerIndex);
+			if (layer == nullptr || checkLayer == nullptr)
+			{
+				continue;
+			}
+			bool collisionCheck = false;
+			fread(&collisionCheck, sizeof(bool), 1, pFile);
+
+			layerCollisions.push_back(collisionCheck);
+		}
+	}
+	m_LayerCollisions = layerCollisions;
+
+	return pScene;
+}
+
+vector<bool> CSaveLoadMgr::GetLayerCollisions(void)
+{
+	return m_LayerCollisions;
 }

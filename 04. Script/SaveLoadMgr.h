@@ -2,8 +2,13 @@
 
 class CLayer;
 class CGameObject;
+class CScene;
+
 class CSaveLoadMgr
 {
+private:
+	static vector<bool> m_LayerCollisions;
+
 private:
 	CSaveLoadMgr();
 	~CSaveLoadMgr();
@@ -18,5 +23,8 @@ public:
 	static void LoadResource(FILE* _pFile);
 	static CLayer* LoadLayer(FILE* _pFile, int layerIndex);
 	static CGameObject* LoadGameObject(FILE* _pFile);
+
+	static CScene* GetScene(const wstring& _strPath);
+	static vector<bool> GetLayerCollisions(void);
 };
 
