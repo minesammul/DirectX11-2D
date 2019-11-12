@@ -229,6 +229,7 @@ call EngineCopy.bat</Command>
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Script.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="SimpleMath.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="State.h" />
     <ClInclude Include="stdafx.h" />
@@ -271,6 +272,7 @@ call EngineCopy.bat</Command>
     <ClCompile Include="SceneMgr.cpp" />
     <ClCompile Include="Script.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SimpleMath.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="State.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -338,6 +340,9 @@ call EngineCopy.bat</Command>
       <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </ObjectFileOutput>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -181,6 +181,9 @@
       <Filter>EngineCode\06. Module</Filter>
     </ClInclude>
     <ClInclude Include="MousePicking.h" />
+    <ClInclude Include="SimpleMath.h">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="func.cpp">
@@ -295,6 +298,9 @@
       <Filter>EngineCode\06. Module</Filter>
     </ClCompile>
     <ClCompile Include="MousePicking.cpp" />
+    <ClCompile Include="SimpleMath.cpp">
+      <Filter>EngineCode\06. Module</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="std.fx">
@@ -306,5 +312,10 @@
     <FxCompile Include="effect.fx">
       <Filter>ShaderCode</Filter>
     </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleMath.inl">
+      <Filter>EngineCode\06. Module</Filter>
+    </None>
   </ItemGroup>
 </Project>
