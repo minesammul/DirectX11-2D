@@ -5,6 +5,8 @@
 #include "SceneMgr.h"
 #include "Scene.h"
 #include "Layer.h"
+#include "Core.h"
+#include "CollisionMgr.h"
 
 CEventMgr::CEventMgr()
 {
@@ -92,6 +94,42 @@ void CEventMgr::update()
 			pLayer->AddObject(((CGameObject*)m_vecEvent[i].lParam), (bool)bMoveAll);
 		}
 			break;
+		case EVENT_TYPE::CHANGE_SCENE:
+		{
+			CScene* nextScene = ((CScene*)m_vecEvent[i].lParam);
+			CSceneMgr::GetInst()->ChangeScene(nextScene);
+
+			vector<bool> layerCollisions = m_vecEvent[i].boolVector;
+			vector<bool>::iterator layerCollisionsIterator;
+			layerCollisionsIterator = layerCollisions.begin();
+
+			for (UINT layerIndex = 0; layerIndex < MAX_LAYER; layerIndex++)
+			{
+				for (UINT checkLayerIndex = layerIndex; checkLayerIndex < MAX_LAYER; checkLayerIndex++)
+				{
+					CLayer* layer = CSceneMgr::GetInst()->GetCurScene()->GetLayer(layerIndex);
+					CLayer* checkLayer = CSceneMgr::GetInst()->GetCurScene()->GetLayer(checkLayerIndex);
+					if (layer == nullptr || checkLayer == nullptr)
+					{
+						continue;
+					}
+					bool collisionCheck = false;
+					collisionCheck = *layerCollisionsIterator;
+					layerCollisionsIterator++;
+
+					if (collisionCheck == true)
+					{
+						CCollisionMgr::GetInst()->CollisionCheck(
+							layer->GetName(),
+							checkLayer->GetName()
+						);
+					}
+				}
+			}
+
+			CCore::GetInst()->SetState(SCENE_STATE::STOP);
+		}
+		break;
 		default:
 			break;
 		}

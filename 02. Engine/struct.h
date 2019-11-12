@@ -101,6 +101,7 @@ struct tEvent
 	EVENT_TYPE	eType;
 	INT_PTR		wParam;	
 	INT_PTR		lParam;	
+	vector<bool> boolVector;
 };
 
 // Vertex
