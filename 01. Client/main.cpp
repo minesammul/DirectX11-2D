@@ -75,7 +75,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	}
 
 	CCore::GetInst()->SetState(SCENE_STATE::LOAD);
-	CSaveLoadMgr::LoadScene(L"D:\\GitHub Project\\DirectX11 2D Portfolio\\Project\\bin\\content\\Scene\\FinalStage8.scene");
+	CSaveLoadMgr::LoadScene(L"D:\\GitHub Project\\DirectX11 2D Portfolio\\Project\\bin\\content\\Scene\\Intro.scene");
 
 	CCore::GetInst()->SetState(SCENE_STATE::STOP);
 
@@ -87,6 +87,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	pCurScene->start();
 
 	CCore::GetInst()->Play(true);
+
+	CCore::GetInst()->SetState(SCENE_STATE::PLAY);
 
     // 기본 메시지 루프입니다:
     while (true)
@@ -105,7 +107,31 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		else
 		{
 			// 메세지가 없을 때
-			CCore::GetInst()->progress();
+
+			//CCore::GetInst()->progress();
+
+			//CScene* pCurScene = CSceneMgr::GetInst()->GetCurScene();
+
+			//pCurScene->awake();
+			//pCurScene->start();
+
+			//CCore::GetInst()->Play(true);
+
+			if (CCore::GetInst()->GetState() == SCENE_STATE::STOP)
+			{
+				CCore::GetInst()->progress();
+				CScene* pCurScene = CSceneMgr::GetInst()->GetCurScene();
+
+				pCurScene->awake();
+				pCurScene->start();
+
+				CCore::GetInst()->Play(true);
+				CCore::GetInst()->SetState(SCENE_STATE::PLAY);
+			}
+			else
+			{
+				CCore::GetInst()->progress();
+			}
 		}       
     }
 
