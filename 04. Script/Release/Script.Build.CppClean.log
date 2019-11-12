@@ -1,86 +1,86 @@
-d:\github project\directx11\directx11\04. script\release\script.pch
-d:\github project\directx11\directx11\04. script\release\04. script.pdb
-d:\github project\directx11\directx11\04. script\release\stdafx.obj
-d:\github project\directx11\directx11\04. script\release\monsterattackstate.obj
-d:\github project\directx11\directx11\04. script\release\monsterattack.obj
-d:\github project\directx11\directx11\04. script\release\leftwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\leftbottomwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\itemswordkindstrategy.obj
-d:\github project\directx11\directx11\04. script\release\itemscript.obj
-d:\github project\directx11\directx11\04. script\release\itemkindstrategy.obj
-d:\github project\directx11\directx11\04. script\release\itemkind.obj
-d:\github project\directx11\directx11\04. script\release\itemimage.obj
-d:\github project\directx11\directx11\04. script\release\itemeffect.obj
-d:\github project\directx11\directx11\04. script\release\itemcomponent.obj
-d:\github project\directx11\directx11\04. script\release\hilightscript.obj
-d:\github project\directx11\directx11\04. script\release\gravityscript.obj
-d:\github project\directx11\directx11\04. script\release\eventscript.obj
-d:\github project\directx11\directx11\04. script\release\eventqueuescript.obj
-d:\github project\directx11\directx11\04. script\release\effectscript.obj
-d:\github project\directx11\directx11\04. script\release\camerascript.obj
-d:\github project\directx11\directx11\04. script\release\bulletscript.obj
-d:\github project\directx11\directx11\04. script\release\bottomwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\attackboxscript.obj
-d:\github project\directx11\directx11\04. script\release\objecteditscript.obj
-d:\github project\directx11\directx11\04. script\release\monsterwalk.obj
-d:\github project\directx11\directx11\04. script\release\monstertrace.obj
-d:\github project\directx11\directx11\04. script\release\monsterthreeshotbullet.obj
-d:\github project\directx11\directx11\04. script\release\monsterswing.obj
-d:\github project\directx11\directx11\04. script\release\monsterstate.obj
-d:\github project\directx11\directx11\04. script\release\monsterscript.obj
-d:\github project\directx11\directx11\04. script\release\monsterresponsescript.obj
-d:\github project\directx11\directx11\04. script\release\monsteroneshotbullet.obj
-d:\github project\directx11\directx11\04. script\release\monstermovestrategy.obj
-d:\github project\directx11\directx11\04. script\release\monstermovestate.obj
-d:\github project\directx11\directx11\04. script\release\monstermove.obj
-d:\github project\directx11\directx11\04. script\release\monsterjumptackle.obj
-d:\github project\directx11\directx11\04. script\release\monsteridlestate.obj
-d:\github project\directx11\directx11\04. script\release\monsterfly.obj
-d:\github project\directx11\directx11\04. script\release\monsterdash.obj
-d:\github project\directx11\directx11\04. script\release\monstercomponent.obj
-d:\github project\directx11\directx11\04. script\release\monstercirclewavebullet.obj
-d:\github project\directx11\directx11\04. script\release\monstercircleshotbullet.obj
-d:\github project\directx11\directx11\04. script\release\monsterattackstrategy.obj
-d:\github project\directx11\directx11\04. script\release\topwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\tilescript.obj
-d:\github project\directx11\directx11\04. script\release\tilemapscript.obj
-d:\github project\directx11\directx11\04. script\release\texturescript.obj
-d:\github project\directx11\directx11\04. script\release\scriptmgr.obj
-d:\github project\directx11\directx11\04. script\release\saveloadmgr.obj
-d:\github project\directx11\directx11\04. script\release\rightwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\rightbottomwallcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\potalverticalscript.obj
-d:\github project\directx11\directx11\04. script\release\potalscript.obj
-d:\github project\directx11\directx11\04. script\release\playerscript.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstatesit.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstatemove.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstatejump.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstateidle.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstatedash.obj
-d:\github project\directx11\directx11\04. script\release\playeractionstate.obj
-d:\github project\directx11\directx11\04. script\release\platformrightcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\platformleftcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\platformcollisionscript.obj
-d:\github project\directx11\directx11\04. script\release\zz2afterimagescript.obj
-d:\github project\directx11\directx11\04. script\release\zz1mousetracescript.obj
-d:\github project\directx11\directx11\04. script\release\z9buttonclickscript.obj
-d:\github project\directx11\directx11\04. script\release\z8backgrounduvaniscript.obj
-d:\github project\directx11\directx11\04. script\release\z7cameraleftcheckscript.obj
-d:\github project\directx11\directx11\04. script\release\z6camerarightcheckscript.obj
-d:\github project\directx11\directx11\04. script\release\z5cameratopcheckscript.obj
-d:\github project\directx11\directx11\04. script\release\z4cameraframescript.obj
-d:\github project\directx11\directx11\04. script\release\z3camerabottomcheckscript.obj
-d:\github project\directx11\directx11\04. script\release\z2fadescript.obj
-d:\github project\directx11\directx11\04. script\release\z1monsterexistfindscript.obj
-d:\github project\directx11\directx11\04. script\release\uiscript.obj
-d:\github project\directx11\directx11\project\library\script\x86\script.lib
-d:\github project\directx11\directx11\04. script\release\04. script.res
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\cl.command.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\cl.read.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\cl.write.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\lib-link-cvtres.read.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\lib-link-cvtres.write.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\lib.command.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\rc.command.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\rc.read.1.tlog
-d:\github project\directx11\directx11\04. script\release\04. script.tlog\rc.write.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\script.pch
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.pdb
+d:\github project\directx11 2d portfolio\project\04. script\release\stdafx.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterattackstate.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterattack.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\leftwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\leftbottomwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemswordkindstrategy.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemkindstrategy.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemkind.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemimage.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemeffect.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\itemcomponent.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\hilightscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\gravityscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\eventscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\eventqueuescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\effectscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\camerascript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\bulletscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\bottomwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\attackboxscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\objecteditscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterwalk.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstertrace.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterthreeshotbullet.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterswing.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterstate.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterresponsescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsteroneshotbullet.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstermovestrategy.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstermovestate.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstermove.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterjumptackle.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsteridlestate.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterfly.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterdash.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstercomponent.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstercirclewavebullet.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monstercircleshotbullet.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\monsterattackstrategy.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\topwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\tilescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\tilemapscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\texturescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\scriptmgr.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\saveloadmgr.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\rightwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\rightbottomwallcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\potalverticalscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\potalscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playerscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstatesit.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstatemove.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstatejump.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstateidle.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstatedash.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\playeractionstate.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\platformrightcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\platformleftcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\platformcollisionscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\zz2afterimagescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\zz1mousetracescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z9buttonclickscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z8backgrounduvaniscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z7cameraleftcheckscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z6camerarightcheckscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z5cameratopcheckscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z4cameraframescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z3camerabottomcheckscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z2fadescript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\z1monsterexistfindscript.obj
+d:\github project\directx11 2d portfolio\project\04. script\release\uiscript.obj
+d:\github project\directx11 2d portfolio\project\project\library\script\x86\script.lib
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.res
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\cl.command.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\cl.read.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\cl.write.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\lib-link-cvtres.read.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\lib-link-cvtres.write.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\lib.command.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\rc.command.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\rc.read.1.tlog
+d:\github project\directx11 2d portfolio\project\04. script\release\04. script.tlog\rc.write.1.tlog

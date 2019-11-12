@@ -1,49 +1,49 @@
-d:\github project\directx11\directx11\02. engine\release\uryty.pch
-d:\github project\directx11\directx11\02. engine\release\02. engine.pdb
-d:\github project\directx11\directx11\02. engine\release\stdafx.obj
-d:\github project\directx11\directx11\02. engine\release\material.obj
-d:\github project\directx11\directx11\02. engine\release\layer.obj
-d:\github project\directx11\directx11\02. engine\release\keymgr.obj
-d:\github project\directx11\directx11\02. engine\release\gameobject.obj
-d:\github project\directx11\directx11\02. engine\release\func.obj
-d:\github project\directx11\directx11\02. engine\release\entity.obj
-d:\github project\directx11\directx11\02. engine\release\device.obj
-d:\github project\directx11\directx11\02. engine\release\prefab.obj
-d:\github project\directx11\directx11\02. engine\release\mousepicking.obj
-d:\github project\directx11\directx11\02. engine\release\eventmgr.obj
-d:\github project\directx11\directx11\02. engine\release\depthstencilstate.obj
-d:\github project\directx11\directx11\02. engine\release\core.obj
-d:\github project\directx11\directx11\02. engine\release\constbuffer.obj
-d:\github project\directx11\directx11\02. engine\release\component.obj
-d:\github project\directx11\directx11\02. engine\release\collisionmgr.obj
-d:\github project\directx11\directx11\02. engine\release\collider2d.obj
-d:\github project\directx11\directx11\02. engine\release\camera.obj
-d:\github project\directx11\directx11\02. engine\release\blendstate.obj
-d:\github project\directx11\directx11\02. engine\release\animator2d.obj
-d:\github project\directx11\directx11\02. engine\release\animation2d.obj
-d:\github project\directx11\directx11\02. engine\release\transform.obj
-d:\github project\directx11\directx11\02. engine\release\timemgr.obj
-d:\github project\directx11\directx11\02. engine\release\texture.obj
-d:\github project\directx11\directx11\02. engine\release\state.obj
-d:\github project\directx11\directx11\02. engine\release\sound.obj
-d:\github project\directx11\directx11\02. engine\release\shader.obj
-d:\github project\directx11\directx11\02. engine\release\script.obj
-d:\github project\directx11\directx11\02. engine\release\scenemgr.obj
-d:\github project\directx11\directx11\02. engine\release\scene.obj
-d:\github project\directx11\directx11\02. engine\release\samplerstate.obj
-d:\github project\directx11\directx11\02. engine\release\resptr.obj
-d:\github project\directx11\directx11\02. engine\release\resource.obj
-d:\github project\directx11\directx11\02. engine\release\resmgr.obj
-d:\github project\directx11\directx11\02. engine\release\rendermgr.obj
-d:\github project\directx11\directx11\02. engine\release\pathmgr.obj
-d:\github project\directx11\directx11\02. engine\release\meshrender.obj
-d:\github project\directx11\directx11\02. engine\release\mesh.obj
-d:\github project\directx11\directx11\project\library\engine\x86\uryty.lib
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\cl.command.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\cl.read.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\cl.write.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\fxc.command.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\fxc.read.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\lib-link.read.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\lib-link.write.1.tlog
-d:\github project\directx11\directx11\02. engine\release\02. engine.tlog\lib.command.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\uryty.pch
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.pdb
+d:\github project\directx11 2d portfolio\project\02. engine\release\stdafx.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\material.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\layer.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\keymgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\gameobject.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\func.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\entity.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\device.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\prefab.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\mousepicking.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\eventmgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\depthstencilstate.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\core.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\constbuffer.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\component.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\collisionmgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\collider2d.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\camera.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\blendstate.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\animator2d.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\animation2d.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\transform.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\timemgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\texture.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\state.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\sound.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\shader.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\script.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\scenemgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\scene.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\samplerstate.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\resptr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\resource.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\resmgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\rendermgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\pathmgr.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\meshrender.obj
+d:\github project\directx11 2d portfolio\project\02. engine\release\mesh.obj
+d:\github project\directx11 2d portfolio\project\project\library\engine\x86\uryty.lib
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\cl.command.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\cl.read.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\cl.write.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\fxc.command.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\fxc.read.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\lib-link.read.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\lib-link.write.1.tlog
+d:\github project\directx11 2d portfolio\project\02. engine\release\02. engine.tlog\lib.command.1.tlog

@@ -7,6 +7,8 @@ private:
 	CAnimation2D* offAnimation;
 	CAnimation2D* onAnimation;
 
+	bool isLoadScene;
+
 public:
 	CZ9ButtonClickScript();
 	~CZ9ButtonClickScript();
