@@ -4,8 +4,8 @@
 class ItemKindStrategy
 {
 private:
-	Vec3 originPosition;
-	Vec3 mouseDirection;
+	Vector3 originPosition;
+	Vector3 mouseDirection;
 
 public:
 	ItemKindStrategy();

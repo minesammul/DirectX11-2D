@@ -86,7 +86,7 @@ void CMesh::CreateMesh(UINT _iVtxSize, UINT _iVtxCount, D3D11_USAGE _eVtxUsage, 
 
 	m_vecLayout.push_back(tLayoutDesc);
 
-	iByteOffset += sizeof(Vec3);
+	iByteOffset += sizeof(Vector3);
 
 	tLayoutDesc.AlignedByteOffset = iByteOffset;
 	tLayoutDesc.Format = DXGI_FORMAT_R32G32B32A32_FLOAT;
@@ -98,7 +98,7 @@ void CMesh::CreateMesh(UINT _iVtxSize, UINT _iVtxCount, D3D11_USAGE _eVtxUsage, 
 
 	m_vecLayout.push_back(tLayoutDesc);
 
-	iByteOffset += sizeof(Vec4);
+	iByteOffset += sizeof(Vector4);
 
 	tLayoutDesc.AlignedByteOffset = iByteOffset;
 	tLayoutDesc.Format = DXGI_FORMAT_R32G32_FLOAT;
@@ -110,7 +110,7 @@ void CMesh::CreateMesh(UINT _iVtxSize, UINT _iVtxCount, D3D11_USAGE _eVtxUsage, 
 
 	m_vecLayout.push_back(tLayoutDesc);
 
-	iByteOffset += sizeof(Vec2);
+	iByteOffset += sizeof(Vector2);
 
 
 

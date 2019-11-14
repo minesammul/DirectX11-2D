@@ -6,7 +6,7 @@
 CBlendState::CBlendState()
 	: m_pState(nullptr)
 	, m_tDesc{}
-	, m_vFactor(Vec4(1.f, 1.f, 1.f, 1.f))
+	, m_vFactor(Vector4(1.f, 1.f, 1.f, 1.f))
 {
 }
 

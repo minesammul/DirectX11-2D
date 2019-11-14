@@ -23,8 +23,8 @@ void MonsterTrace::Attack(CMonsterScript * monster)
 			monster->Object()->Animator2D()->GetCurAnim()->Play();
 		}
 
-		Vec3 monsterTraceDirection = monster->GetMonsterDirection();
-		Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 monsterTraceDirection = monster->GetMonsterDirection();
+		Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 
 		monsterPosition.x += monsterTraceDirection.x * TRACE_SPEED * DT;
 		monsterPosition.y += monsterTraceDirection.y * TRACE_SPEED * DT;
@@ -32,7 +32,7 @@ void MonsterTrace::Attack(CMonsterScript * monster)
 		monster->Object()->Transform()->SetLocalPos(monsterPosition);
 
 
-		Vec3 nowMoveDistance = Vec3(
+		Vector3 nowMoveDistance = Vector3(
 			monsterTraceDirection.x*TRACE_SPEED*DT,
 			monsterTraceDirection.y*TRACE_SPEED*DT,
 			0.f

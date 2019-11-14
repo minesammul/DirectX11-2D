@@ -19,7 +19,7 @@ void MonsterOneShotBullet::Attack(CMonsterScript * monster)
 {
 	monster->SetMonsterDirectionImage();
 
-	Vec3 bulletDirection = monster->GetMonsterDirection();
+	Vector3 bulletDirection = monster->GetMonsterDirection();
 
 	map<UINT, CScript*> prefabInputScripts;
 
@@ -43,7 +43,7 @@ void MonsterOneShotBullet::Attack(CMonsterScript * monster)
 		prefabInputScripts[scriptType] = prefabScript;
 	}
 
-	Vec3 bulletPosition = monster->Object()->Transform()->GetLocalPos();
+	Vector3 bulletPosition = monster->Object()->Transform()->GetLocalPos();
 	bulletPosition.x += bulletDirection.x*20.f;
 	bulletPosition.y += bulletDirection.y*20.f;
 

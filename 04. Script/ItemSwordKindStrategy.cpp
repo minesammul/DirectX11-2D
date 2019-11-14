@@ -14,7 +14,7 @@ ItemSwordKindStrategy::~ItemSwordKindStrategy()
 
 void ItemSwordKindStrategy::Action(ItemKind* itemKind)
 {
-	Vec3 itemPosition = itemKind->GetItemPosition();
+	Vector3 itemPosition = itemKind->GetItemPosition();
 
 	if (swordState == SWORD_STATE::UP)
 	{
@@ -32,17 +32,17 @@ void ItemSwordKindStrategy::Action(ItemKind* itemKind)
 
 void ItemSwordKindStrategy::Update(ItemKind* itemKind)
 {
-	Vec3 nowItemDirection = itemKind->GetItemDirection();
-	Vec3 nowMouseDirection = itemKind->GetMouseDirection();
+	Vector3 nowItemDirection = itemKind->GetItemDirection();
+	Vector3 nowMouseDirection = itemKind->GetMouseDirection();
 
 	nowItemDirection = XMVector3Normalize(nowItemDirection);
 	nowMouseDirection = XMVector2Normalize(nowMouseDirection);
 
-	Vec3 dotValue = XMVector3Dot(nowItemDirection, nowMouseDirection);
+	Vector3 dotValue = XMVector3Dot(nowItemDirection, nowMouseDirection);
 	float radian = acos(dotValue.x);
 
 
-	Vec3 itemRotate = Vec3(0.f, 0.f, 0.f);
+	Vector3 itemRotate = Vector3(0.f, 0.f, 0.f);
 
 
 	if (nowMouseDirection.x > 0)
@@ -90,7 +90,7 @@ void ItemSwordKindStrategy::Update(ItemKind* itemKind)
 		}
 	}
 
-	Vec3 itemAxisRotate = Vec3(0.f, 0.f, radian);
+	Vector3 itemAxisRotate = Vector3(0.f, 0.f, radian);
 	itemKind->SetItemAxisRotate(itemAxisRotate);
 	
 	itemKind->SetItemRotate(itemRotate);

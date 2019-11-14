@@ -19,7 +19,7 @@ CPlayerScript::CPlayerScript()
 {
 	actionState = PlayerActionStateIdle::GetInstance();
 	moveSpeed = 200.f;
-	moveDirection = Vec3(1.f, 0.f, 0.f);
+	moveDirection = Vector3(1.f, 0.f, 0.f);
 
 	playerData.maxHp = 100;
 	playerData.nowHp = 100;
@@ -91,16 +91,16 @@ CPlayerScript::~CPlayerScript()
 
 void CPlayerScript::CalculationMoveDirection()
 {
-	moveDirection = Vec3(1.f, 0.f, 0.f);
+	moveDirection = Vector3(1.f, 0.f, 0.f);
 }
 
 void CPlayerScript::CalculationMouseDirection()
 {
-	Vec3 playerPosition = Object()->Transform()->GetLocalPos();
+	Vector3 playerPosition = Object()->Transform()->GetLocalPos();
 
 	POINT mousePosition = CKeyMgr::GetInst()->GetMousePos();
 
-	XMVECTOR sceneMousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(
+	Vector3 sceneMousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(
 		mousePosition,
 		mainCamera
 	);

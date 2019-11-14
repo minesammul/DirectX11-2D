@@ -80,7 +80,7 @@ void PlayerActionStateJump::ActionJump(CPlayerScript * player)
 	}
 
 
-	Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+	Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 	playerPosition.y += nowJumpPower * DT;
 	player->Object()->Transform()->SetLocalPos(playerPosition);
 }
@@ -89,14 +89,14 @@ void PlayerActionStateJump::ActionMove(CPlayerScript * player)
 {
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_A) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		playerPosition.x -= player->GetMoveSpeed() * DT;
 		player->Object()->Transform()->SetLocalPos(playerPosition);
 	}
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_D) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		playerPosition.x += player->GetMoveSpeed() * DT;
 		player->Object()->Transform()->SetLocalPos(playerPosition);
 	}
@@ -139,11 +139,11 @@ void PlayerActionStateJump::ChangeJumpToDash(CPlayerScript * player)
 {
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_RBTN) == KEY_STATE::STATE_TAB)
 	{
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		PlayerActionStateDash::GetInstance()->SetStartPosition(playerPosition);
 
 
-		Vec3 dashDirection = player->GetMouseDirection();
+		Vector3 dashDirection = player->GetMouseDirection();
 		playerPosition.x += dashDirection.x * PlayerActionStateDash::GetInstance()->DASH_FIRST_POWER;
 		playerPosition.y += dashDirection.y * PlayerActionStateDash::GetInstance()->DASH_FIRST_POWER;
 

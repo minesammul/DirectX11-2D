@@ -22,11 +22,11 @@ public:
 
 
 private:
-	Vec3				m_vOffset;	// Object 로 부터 상대좌표
-	Vec3				m_vFinalPos;// Transform 위치 + Offset
+	Vector3				m_vOffset;	// Object 로 부터 상대좌표
+	Vector3				m_vFinalPos;// Transform 위치 + Offset
 
-	Vec3				m_vScale;	// 추가로 곱해지는 크기 배율값
-	Vec3				m_vFinalScale; // Transform 크기 * 충돌체 크기
+	Vector3				m_vScale;	// 추가로 곱해지는 크기 배율값
+	Vector3				m_vFinalScale; // Transform 크기 * 충돌체 크기
 	
 	COLLIDER2D_TYPE		m_eType;
 	Matrix				m_matColWorld; // 충돌체 월드 행렬
@@ -41,14 +41,14 @@ public:
 	virtual void finalupdate();
 	
 public:
-	void SetOffset(const Vec3& _vOffset) { m_vOffset = _vOffset; m_vOffset.z = 0.f; }
-	const Vec3& GetOffset() { return m_vOffset; }	
+	void SetOffset(const Vector3& _vOffset) { m_vOffset = _vOffset; m_vOffset.z = 0.f; }
+	const Vector3& GetOffset() { return m_vOffset; }	
 
-	void SetScale(const Vec3& _vScale) { m_vScale = _vScale; m_vScale.z = 0.f; }
-	const Vec3& GetScale() { return m_vScale; }
+	void SetScale(const Vector3& _vScale) { m_vScale = _vScale; m_vScale.z = 0.f; }
+	const Vector3& GetScale() { return m_vScale; }
 
-	Vec3 GetFinalPositon() { return m_vFinalPos; }
-	Vec3 GetFinalScale() { return m_vFinalScale; }
+	Vector3 GetFinalPositon() { return m_vFinalPos; }
+	Vector3 GetFinalScale() { return m_vFinalScale; }
 
 	void SetColliderType(COLLIDER2D_TYPE _eType);
 	COLLIDER2D_TYPE GetCollider2DType() { return m_eType; }

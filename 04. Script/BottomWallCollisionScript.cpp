@@ -63,8 +63,8 @@ void CBottomWallCollisionScript::OnCollision(CCollider2D * _pOther)
 	{
 		gravityScript->SetActiveGravity(false);
 
-		Vec3 characterPosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
-		Vec3 characterScale = Object()->GetParent()->Collider2D()->GetFinalScale();
+		Vector3 characterPosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
+		Vector3 characterScale = Object()->GetParent()->Collider2D()->GetFinalScale();
 		characterPosition.y = _pOther->Object()->Transform()->GetLocalPos().y + (_pOther->Object()->Transform()->GetLocalScale().y/2) + (characterScale.y/2) - 2.f;
 		Object()->GetParent()->Transform()->SetLocalPos(characterPosition);
 

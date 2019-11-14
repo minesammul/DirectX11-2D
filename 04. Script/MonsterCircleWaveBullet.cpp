@@ -19,7 +19,7 @@ void MonsterCircleWaveBullet::Attack(CMonsterScript * monster)
 
 	for (int bulletCount = 0; bulletCount < 16; bulletCount++)
 	{
-		Vec3 bulletDirection = Vec3(1.0f, 0.0f, 0.0f);
+		Vector3 bulletDirection = Vector3(1.0f, 0.0f, 0.0f);
 		float radian = (2 * g_XMPi.f[0] / 16) * bulletCount;
 		float xPosition = cosf(radian);
 		float yPosition = sinf(radian);

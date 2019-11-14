@@ -88,7 +88,7 @@ void CAnimator2D::UpdateData()
 }
 
 void CAnimator2D::AddAnimation(const wstring & _strKey
-	, CResPtr<CTexture> _pTex, Vec2 _vLT, Vec2 _vCropSize
+	, CResPtr<CTexture> _pTex, Vector2 _vLT, Vector2 _vCropSize
 	, int _iFrmCount, float _fTerm)
 {
 	assert(!FindAnim(_strKey));
@@ -107,7 +107,7 @@ void CAnimator2D::AddAnimation(const wstring & _strKey, const wstring & _strFold
 	m_mapAnim.insert(make_pair(_strKey, pAnim));
 }
 
-void CAnimator2D::AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vec2 _vLT, Vec2 _vCropSize, Vec2 offset, int _iFrmCount, float _fTerm)
+void CAnimator2D::AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vector2 _vLT, Vector2 _vCropSize, Vector2 offset, int _iFrmCount, float _fTerm)
 {
 	assert(!FindAnim(_strKey));
 	assert(nullptr != _pTex);

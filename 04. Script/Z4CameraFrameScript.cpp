@@ -75,8 +75,8 @@ void CZ4CameraFrameScript::update()
 {
 	if (target->IsActive() == true)
 	{
-		Vec3 cameraFramePosition = Object()->Transform()->GetLocalPos();
-		Vec3 targetPosition = target->Transform()->GetLocalPos();
+		Vector3 cameraFramePosition = Object()->Transform()->GetLocalPos();
+		Vector3 targetPosition = target->Transform()->GetLocalPos();
 
 		if (isPotalUse == false)
 		{
@@ -103,16 +103,16 @@ void CZ4CameraFrameScript::update()
 			}
 			else
 			{
-				Vec3 VectorCameraFrameToTarget = targetPosition - cameraFramePosition;
+				Vector3 VectorCameraFrameToTarget = targetPosition - cameraFramePosition;
 				
-				Vec3 distanceCameraFrameToTarget = VectorCameraFrameToTarget;
+				Vector3 distanceCameraFrameToTarget = VectorCameraFrameToTarget;
 
 				distanceCameraFrameToTarget.x = 0.f;
 				distanceCameraFrameToTarget.z = 0.f;
 
 				distanceCameraFrameToTarget = XMVector2Length(distanceCameraFrameToTarget);
 
-				Vec3 cameraFrameMoveDirection = XMVector2Normalize(VectorCameraFrameToTarget);
+				Vector3 cameraFrameMoveDirection = XMVector2Normalize(VectorCameraFrameToTarget);
 
 				if (distanceCameraFrameToTarget.x > MOVE_START_DISTANCE)
 				{
@@ -147,16 +147,16 @@ void CZ4CameraFrameScript::update()
 			}
 			else
 			{
-				Vec3 VectorCameraFrameToTarget = targetPosition - cameraFramePosition;
+				Vector3 VectorCameraFrameToTarget = targetPosition - cameraFramePosition;
 
-				Vec3 distanceCameraFrameToTarget = VectorCameraFrameToTarget;
+				Vector3 distanceCameraFrameToTarget = VectorCameraFrameToTarget;
 
 				distanceCameraFrameToTarget.y = 0.f;
 				distanceCameraFrameToTarget.z = 0.f;
 
 				distanceCameraFrameToTarget = XMVector2Length(distanceCameraFrameToTarget);
 
-				Vec3 cameraFrameMoveDirection = XMVector2Normalize(VectorCameraFrameToTarget);
+				Vector3 cameraFrameMoveDirection = XMVector2Normalize(VectorCameraFrameToTarget);
 
 				if (distanceCameraFrameToTarget.x > MOVE_START_DISTANCE)
 				{

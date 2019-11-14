@@ -30,7 +30,7 @@ private:
 
 	CResPtr<CMaterial> m_pCloneMtrl;
 
-	Vec3 monsterDirection;
+	Vector3 monsterDirection;
 
 	int hp;
 	CResPtr<CPrefab> dieEffectPrefab;
@@ -67,7 +67,7 @@ public:
 	void SetMonsterLeftRightImage(int OriginZeroInverseOne);
 	void SetMonsterDirectionImage(void);
 
-	Vec3 GetMonsterDirection(void) 
+	Vector3 GetMonsterDirection(void) 
 	{
 		return monsterDirection;
 	}

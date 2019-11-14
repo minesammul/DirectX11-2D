@@ -54,11 +54,11 @@ void MonsterIdleState::Update(CMonsterScript * monster)
 		vector<CGameObject*> player;
 		CSceneMgr::GetInst()->GetCurScene()->FindGameObject(L"Player", player);
 
-		Vec3 playerPosition = player[0]->Transform()->GetLocalPos();
+		Vector3 playerPosition = player[0]->Transform()->GetLocalPos();
 
-		Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 
-		Vec3 distance = XMVector2Length(playerPosition - monsterPosition);
+		Vector3 distance = XMVector2Length(playerPosition - monsterPosition);
 
 		if (200.f < distance.x && distance.x < 400.f)
 		{

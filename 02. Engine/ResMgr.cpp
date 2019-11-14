@@ -46,24 +46,24 @@ void CResMgr::CreateDefaultMesh()
 	// |  \  |
 	// 2-----3
 
-	v.vPos = Vec3(-0.5f, 0.5f, 0.f);
-	v.vColor = Vec4(1.f, 0.f, 0.f, 1.f);
-	v.vUV = Vec2(0.f, 0.f);
+	v.vPos = Vector3(-0.5f, 0.5f, 0.f);
+	v.vColor = Vector4(1.f, 0.f, 0.f, 1.f);
+	v.vUV = Vector2(0.f, 0.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(0.5f, 0.5f, 0.f);
-	v.vColor = Vec4(0.f, 1.f, 0.f, 1.f);
-	v.vUV = Vec2(1.f, 0.f);
+	v.vPos = Vector3(0.5f, 0.5f, 0.f);
+	v.vColor = Vector4(0.f, 1.f, 0.f, 1.f);
+	v.vUV = Vector2(1.f, 0.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(-0.5f, -0.5f, 0.f);
-	v.vColor = Vec4(0.f, 0.f, 1.f, 1.f);
-	v.vUV = Vec2(0.f, 1.f);
+	v.vPos = Vector3(-0.5f, -0.5f, 0.f);
+	v.vColor = Vector4(0.f, 0.f, 1.f, 1.f);
+	v.vUV = Vector2(0.f, 1.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(0.5f, -0.5f, 0.f);
-	v.vColor = Vec4(0.5f, 0.5f, 0.f, 1.f);
-	v.vUV = Vec2(1.f, 1.f);
+	v.vPos = Vector3(0.5f, -0.5f, 0.f);
+	v.vColor = Vector4(0.5f, 0.5f, 0.f, 1.f);
+	v.vUV = Vector2(1.f, 1.f);
 	vecVtx.push_back(v);
 
 	// Create Index Buffer
@@ -91,24 +91,24 @@ void CResMgr::CreateDefaultMesh()
 	// |	 |
 	// 2-----3
 
-	v.vPos = Vec3(-0.5f, 0.5f, 0.f);
-	v.vColor = Vec4(1.f, 0.f, 0.f, 1.f);
-	v.vUV = Vec2(0.f, 0.f);
+	v.vPos = Vector3(-0.5f, 0.5f, 0.f);
+	v.vColor = Vector4(1.f, 0.f, 0.f, 1.f);
+	v.vUV = Vector2(0.f, 0.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(0.5f, 0.5f, 0.f);
-	v.vColor = Vec4(0.f, 1.f, 0.f, 1.f);
-	v.vUV = Vec2(1.f, 0.f);
+	v.vPos = Vector3(0.5f, 0.5f, 0.f);
+	v.vColor = Vector4(0.f, 1.f, 0.f, 1.f);
+	v.vUV = Vector2(1.f, 0.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(-0.5f, -0.5f, 0.f);
-	v.vColor = Vec4(0.f, 0.f, 1.f, 1.f);
-	v.vUV = Vec2(0.f, 1.f);
+	v.vPos = Vector3(-0.5f, -0.5f, 0.f);
+	v.vColor = Vector4(0.f, 0.f, 1.f, 1.f);
+	v.vUV = Vector2(0.f, 1.f);
 	vecVtx.push_back(v);
 
-	v.vPos = Vec3(0.5f, -0.5f, 0.f);
-	v.vColor = Vec4(0.5f, 0.5f, 0.f, 1.f);
-	v.vUV = Vec2(1.f, 1.f);
+	v.vPos = Vector3(0.5f, -0.5f, 0.f);
+	v.vColor = Vector4(0.5f, 0.5f, 0.f, 1.f);
+	v.vUV = Vector2(1.f, 1.f);
 	vecVtx.push_back(v);
 
 	// Create Index Buffer
@@ -136,8 +136,8 @@ void CResMgr::CreateDefaultMesh()
 	float fTheta = 0.f;
 	
 	// 원의 중심
-	v.vPos = Vec3(0.f, 0.f, 0.f);
-	v.vColor = Vec4(1.f, 1.f, 1.f, 1.f);
+	v.vPos = Vector3(0.f, 0.f, 0.f);
+	v.vColor = Vector4(1.f, 1.f, 1.f, 1.f);
 	vecVtx.push_back(v);
 
 	// 테두리 정점
@@ -147,7 +147,7 @@ void CResMgr::CreateDefaultMesh()
 		v.vPos.y = sinf(fTheta);
 		v.vPos.z = 0.f;
 
-		v.vColor = Vec4(1.f, 1.f, 1.f, 1.f);
+		v.vColor = Vector4(1.f, 1.f, 1.f, 1.f);
 
 		vecVtx.push_back(v);
 

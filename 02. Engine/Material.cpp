@@ -54,14 +54,14 @@ void CMaterial::SetData(SHADER_PARAM _eType, void * _pSrc)
 	case SHADER_PARAM::VEC2_2:		
 	case SHADER_PARAM::VEC2_3:
 		iIdx = (UINT)_eType - (UINT)SHADER_PARAM::VEC2_0;
-		m_param.arrVec2[iIdx] = *((Vec2*)_pSrc);
+		m_param.arrVec2[iIdx] = *((Vector2*)_pSrc);
 		break;
 	case SHADER_PARAM::VEC4_0:		
 	case SHADER_PARAM::VEC4_1:		
 	case SHADER_PARAM::VEC4_2:		
 	case SHADER_PARAM::VEC4_3:
 		iIdx = (UINT)_eType - (UINT)SHADER_PARAM::VEC4_0;
-		m_param.arrVec4[iIdx] = *((Vec4*)_pSrc);
+		m_param.arrVec4[iIdx] = *((Vector4*)_pSrc);
 		break;
 	case SHADER_PARAM::MAT_0:		
 	case SHADER_PARAM::MAT_1:		

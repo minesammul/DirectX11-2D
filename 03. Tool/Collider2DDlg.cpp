@@ -26,7 +26,7 @@ Collider2DDlg::~Collider2DDlg()
 void Collider2DDlg::UpdatePosition(CGameObject * target)
 {
 	CCollider2D* targetCollider2D = target->Collider2D();
-	Vec3 collider2DPosition = targetCollider2D->GetOffset();
+	Vector3 collider2DPosition = targetCollider2D->GetOffset();
 	
 	CString inputStr;
 	inputStr.Format(L"%f", collider2DPosition.x);
@@ -40,7 +40,7 @@ void Collider2DDlg::UpdatePosition(CGameObject * target)
 void Collider2DDlg::UpdateScale(CGameObject * target)
 {
 	CCollider2D* targetCollider2D = target->Collider2D();
-	Vec3 collider2DScale = targetCollider2D->GetScale();
+	Vector3 collider2DScale = targetCollider2D->GetScale();
 
 	CString inputStr;
 	inputStr.Format(L"%f", collider2DScale.x);
@@ -137,7 +137,7 @@ void Collider2DDlg::OnEnKillfocusEditPositionX()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetOffset();
+		Vector3 inputVec3 = target->Collider2D()->GetOffset();
 		CString inputStr;
 		editPositionX.GetWindowTextW(inputStr);
 		inputVec3.x = static_cast<float>(_wtof(inputStr));
@@ -161,7 +161,7 @@ void Collider2DDlg::OnEnKillfocusEditPositionY()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetOffset();
+		Vector3 inputVec3 = target->Collider2D()->GetOffset();
 		CString inputStr;
 		editPositionY.GetWindowTextW(inputStr);
 		inputVec3.y = static_cast<float>(_wtof(inputStr));
@@ -184,7 +184,7 @@ void Collider2DDlg::OnEnKillfocusEditPositionZ()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetOffset();
+		Vector3 inputVec3 = target->Collider2D()->GetOffset();
 		CString inputStr;
 		editPositionZ.GetWindowTextW(inputStr);
 		inputVec3.z = static_cast<float>(_wtof(inputStr));
@@ -207,7 +207,7 @@ void Collider2DDlg::OnEnKillfocusEditScaleX()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetScale();
+		Vector3 inputVec3 = target->Collider2D()->GetScale();
 		CString inputStr;
 		editScaleX.GetWindowTextW(inputStr);
 		inputVec3.x = static_cast<float>(_wtof(inputStr));
@@ -230,7 +230,7 @@ void Collider2DDlg::OnEnKillfocusEditScaleY()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetScale();
+		Vector3 inputVec3 = target->Collider2D()->GetScale();
 		CString inputStr;
 		editScaleY.GetWindowTextW(inputStr);
 		inputVec3.y = static_cast<float>(_wtof(inputStr));
@@ -253,7 +253,7 @@ void Collider2DDlg::OnEnKillfocusEditScaleZ()
 	CGameObject* target = GetTarget();
 	if (target != nullptr)
 	{
-		Vec3 inputVec3 = target->Collider2D()->GetScale();
+		Vector3 inputVec3 = target->Collider2D()->GetScale();
 		CString inputStr;
 		editScaleX.GetWindowTextW(inputStr);
 		inputVec3.z= static_cast<float>(_wtof(inputStr));

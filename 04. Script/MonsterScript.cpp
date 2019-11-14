@@ -87,7 +87,7 @@ void CMonsterScript::AftertreatmentDie()
 				prefabInputScripts[scriptType] = prefabScript;
 			}
 
-			Vec3 dieEffectPosition = Object()->Transform()->GetLocalPos();
+			Vector3 dieEffectPosition = Object()->Transform()->GetLocalPos();
 
 			Instantiate(dieEffectPrefab, dieEffectPosition, prefabInputScripts);
 
@@ -106,7 +106,7 @@ void CMonsterScript::CheckAttackBoxDirection()
 		{
 			if (monsterDirection.x > 0)
 			{
-				Vec3 attackBoxPosition = attackBox->Transform()->GetLocalPos();
+				Vector3 attackBoxPosition = attackBox->Transform()->GetLocalPos();
 				if (attackBoxPosition.x < 0)
 				{
 					attackBoxPosition.x *= -1;
@@ -115,7 +115,7 @@ void CMonsterScript::CheckAttackBoxDirection()
 			}
 			else
 			{
-				Vec3 attackBoxPosition = attackBox->Transform()->GetLocalPos();
+				Vector3 attackBoxPosition = attackBox->Transform()->GetLocalPos();
 				if (attackBoxPosition.x > 0)
 				{
 					attackBoxPosition.x *= -1;
@@ -188,9 +188,9 @@ void CMonsterScript::SetMonsterLeftRightImage(int OriginZeroInverseOne)
 
 void CMonsterScript::SetMonsterDirectionImage(void)
 {
-	Vec3 playerPosition = player->Transform()->GetLocalPos();
-	Vec3 monsterPosition = Object()->Transform()->GetLocalPos();
-	Vec3 monsterDirection = playerPosition - monsterPosition;
+	Vector3 playerPosition = player->Transform()->GetLocalPos();
+	Vector3 monsterPosition = Object()->Transform()->GetLocalPos();
+	Vector3 monsterDirection = playerPosition - monsterPosition;
 	monsterDirection = XMVector2Normalize(monsterDirection);
 	if (monsterDirection.x > 0)
 	{

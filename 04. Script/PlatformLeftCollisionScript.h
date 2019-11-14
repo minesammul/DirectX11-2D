@@ -9,7 +9,7 @@ private:
 	const int USE_POINT_INDEX_0 = 1;
 	const int USE_POINT_INDEX_1 = 3;
 
-	Vec3 collisionMoveDirection;
+	Vector3 collisionMoveDirection;
 
 public:
 	CPlatformLeftCollisionScript();
@@ -23,7 +23,7 @@ public:
 	void SetCollision(bool collision) { collisionOn = collision; }
 	bool GetCollision(void) { return collisionOn; }
 
-	Vec3 GetCollisionMoveDirection(void) { return collisionMoveDirection; }
+	Vector3 GetCollisionMoveDirection(void) { return collisionMoveDirection; }
 
 };
 

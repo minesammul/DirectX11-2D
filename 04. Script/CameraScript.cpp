@@ -27,8 +27,8 @@ void CCameraScript::update()
 {
 	if (target->IsActive() == true)
 	{
-		Vec3 cameraPosition = Object()->Transform()->GetLocalPos();
-		Vec3 targetPosition = target->Transform()->GetLocalPos();
+		Vector3 cameraPosition = Object()->Transform()->GetLocalPos();
+		Vector3 targetPosition = target->Transform()->GetLocalPos();
 
 		cameraPosition.x = targetPosition.x;
 		cameraPosition.y = targetPosition.y;

@@ -18,8 +18,8 @@ class CPlayerScript :
 private:
 	PlayerActionState* actionState;
 	float moveSpeed;
-	Vec3 moveDirection;
-	Vec3 mouseDirection;
+	Vector3 moveDirection;
+	Vector3 mouseDirection;
 
 	CResPtr<CMaterial> cloneMtrl;
 
@@ -28,7 +28,7 @@ private:
 
 	bool isCameraFocusPositionFind;
 	UINT beforeCameraFocusObjectID;
-	Vec3 cameraFocusPosition;
+	Vector3 cameraFocusPosition;
 	int cameraFocusLayerIndex;
 
 	CGameObject* playerHPBar;
@@ -65,10 +65,10 @@ public:
 
 	float GetMoveSpeed() { return moveSpeed; }
 
-	Vec3 GetMoveDirection() { return moveDirection; }
-	void SetMoveDirection(Vec3 direction) { moveDirection = direction; }
+	Vector3 GetMoveDirection() { return moveDirection; }
+	void SetMoveDirection(Vector3 direction) { moveDirection = direction; }
 
-	Vec3 GetMouseDirection() { return mouseDirection; }
+	Vector3 GetMouseDirection() { return mouseDirection; }
 
 	void SendPlayerDataToEventQueue(void);
 	void PlayerHited(void);
@@ -82,7 +82,7 @@ public:
 		isCameraFocusPositionFind = find;
 	}
 
-	Vec3 GetCameraFocusPosition(void)
+	Vector3 GetCameraFocusPosition(void)
 	{
 		return cameraFocusPosition;
 	}

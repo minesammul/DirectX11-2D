@@ -78,7 +78,7 @@ void PlayerActionStateIdle::ChangeIdleToJump(CPlayerScript * player)
 
 					gravityScript->SetActiveGravity(true);
 
-					Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+					Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 					playerPosition.y += 20.f;
 					player->Object()->Transform()->SetLocalPos(playerPosition);
 
@@ -103,11 +103,11 @@ void PlayerActionStateIdle::ChangeIdleToDash(CPlayerScript * player)
 {
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_RBTN) == KEY_STATE::STATE_TAB)
 	{
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		PlayerActionStateDash::GetInstance()->SetStartPosition(playerPosition);
 
 
-		Vec3 dashDirection = player->GetMouseDirection();
+		Vector3 dashDirection = player->GetMouseDirection();
 		playerPosition.x += dashDirection.x * PlayerActionStateDash::GetInstance()->DASH_FIRST_POWER;
 		playerPosition.y += dashDirection.y * PlayerActionStateDash::GetInstance()->DASH_FIRST_POWER;
 
@@ -144,8 +144,8 @@ void PlayerActionStateIdle::CreateJumpEffect(CPlayerScript * player)
 		prefabInputScripts[scriptType] = prefabScript;
 	}
 
-	Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
-	Vec3 effectPosition = playerPosition;
+	Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
+	Vector3 effectPosition = playerPosition;
 	effectPosition.y -= player->Object()->Collider2D()->GetFinalScale().y / 4;
 	player->Instantiate(moveEffect, effectPosition, prefabInputScripts);
 }

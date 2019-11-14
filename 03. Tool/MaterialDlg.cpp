@@ -302,7 +302,7 @@ void CMaterialDlg::OnLbnSelchangeList1()
 			iIdx = (UINT)selectParameterData.eType - (UINT)SHADER_PARAM::VEC2_0;
 			inputShaderParameterValue.push_back(((CMaterial*)CResInfoDlg::GetRes())->GetParamData().arrVec2[iIdx].x);
 			inputShaderParameterValue.push_back(((CMaterial*)CResInfoDlg::GetRes())->GetParamData().arrVec2[iIdx].y);
-			//m_param.arrVec2[iIdx] = *((Vec2*)_pSrc);
+			//m_param.arrVec2[iIdx] = *((Vector2*)_pSrc);
 			break;
 		case SHADER_PARAM::VEC4_0:
 		case SHADER_PARAM::VEC4_1:
@@ -313,7 +313,7 @@ void CMaterialDlg::OnLbnSelchangeList1()
 			inputShaderParameterValue.push_back(((CMaterial*)CResInfoDlg::GetRes())->GetParamData().arrVec4[iIdx].y);
 			inputShaderParameterValue.push_back(((CMaterial*)CResInfoDlg::GetRes())->GetParamData().arrVec4[iIdx].z);
 			inputShaderParameterValue.push_back(((CMaterial*)CResInfoDlg::GetRes())->GetParamData().arrVec4[iIdx].w);
-			//m_param.arrVec4[iIdx] = *((Vec4*)_pSrc);
+			//m_param.arrVec4[iIdx] = *((Vector4*)_pSrc);
 			break;
 		case SHADER_PARAM::MAT_0:
 		case SHADER_PARAM::MAT_1:
@@ -458,7 +458,7 @@ void CMaterialDlg::OnLvnEndlabeleditList2(NMHDR *pNMHDR, LRESULT *pResult)
 	case SHADER_PARAM::VEC2_3:
 	{
 		tShaderParam paramData = ((CMaterial*)CResInfoDlg::GetRes())->GetParamData();
-		Vec2 inputData = paramData.arrVec2[(UINT)selectParameterData.eType - (UINT)SHADER_PARAM::VEC2_0];
+		Vector2 inputData = paramData.arrVec2[(UINT)selectParameterData.eType - (UINT)SHADER_PARAM::VEC2_0];
 
 		if (selectParameterValueIndex == 0)
 		{
@@ -479,7 +479,7 @@ void CMaterialDlg::OnLvnEndlabeleditList2(NMHDR *pNMHDR, LRESULT *pResult)
 	case SHADER_PARAM::VEC4_3:
 	{
 		tShaderParam paramData = ((CMaterial*)CResInfoDlg::GetRes())->GetParamData();
-		Vec4 inputData = paramData.arrVec4[(UINT)selectParameterData.eType - (UINT)SHADER_PARAM::VEC4_0];
+		Vector4 inputData = paramData.arrVec4[(UINT)selectParameterData.eType - (UINT)SHADER_PARAM::VEC4_0];
 
 		if (selectParameterValueIndex == 0)
 		{

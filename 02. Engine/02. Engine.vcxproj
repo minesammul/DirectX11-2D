@@ -206,7 +206,6 @@ call EngineCopy.bat</Command>
     <ClInclude Include="Core.h" />
     <ClInclude Include="DepthStencilState.h" />
     <ClInclude Include="EventMgr.h" />
-    <ClInclude Include="MousePicking.h" />
     <ClInclude Include="Prefab.h" />
     <ClInclude Include="define.h" />
     <ClInclude Include="Device.h" />
@@ -251,7 +250,6 @@ call EngineCopy.bat</Command>
     <ClCompile Include="Core.cpp" />
     <ClCompile Include="DepthStencilState.cpp" />
     <ClCompile Include="EventMgr.cpp" />
-    <ClCompile Include="MousePicking.cpp" />
     <ClCompile Include="Prefab.cpp" />
     <ClCompile Include="Device.cpp" />
     <ClCompile Include="Entity.cpp" />

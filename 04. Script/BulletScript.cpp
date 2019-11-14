@@ -6,8 +6,8 @@
 CBulletScript::CBulletScript()
 	: CScript((UINT)SCRIPT_TYPE::BULLETSCRIPT)
 	, m_fSpeed(200.f)
-	, direction(Vec3(1.f, 0.f, 0.f))
-	, distance(Vec3(0.f, 0.f, 0.f))
+	, direction(Vector3(1.f, 0.f, 0.f))
+	, distance(Vector3(0.f, 0.f, 0.f))
 	, isDestroy(false)
 	, isEffectStart(false)
 	, delayTime(0.f)
@@ -28,7 +28,7 @@ void CBulletScript::update()
 	nowDelayTime += DT;
 	if (nowDelayTime > delayTime)
 	{
-		Vec3 position = Transform()->GetLocalPos();
+		Vector3 position = Transform()->GetLocalPos();
 		direction = XMVector2Normalize(direction);
 
 		position.x += direction.x * m_fSpeed * DT;
@@ -46,7 +46,7 @@ void CBulletScript::update()
 				Object()->Animator2D()->GetCurAnim()->Play();
 			}
 
-			Vec3 nowDistance = XMVector2Length(distance);
+			Vector3 nowDistance = XMVector2Length(distance);
 			if (nowDistance.x > MAX_DISTANCE)
 			{
 				isEffectStart = true;

@@ -41,10 +41,10 @@ BEGIN_MESSAGE_MAP(CAddAnimDlg, CDialogEx)
 	ON_NOTIFY(LVN_KEYDOWN, IDC_LIST1, &CAddAnimDlg::OnLvnKeydown)
 END_MESSAGE_MAP()
 
-// pAnimator2D->AddAnimation(L"Player_Down_Walk", pTex, Vec2(0, 260), Vec2(60, 65), 10, 0.08f);
-// pAnimator2D->AddAnimation(L"Player_Left_Walk", pTex, Vec2(0, 325), Vec2(60, 65), 10, 0.08f);
-// pAnimator2D->AddAnimation(L"Player_Up_Walk", pTex, Vec2(0, 390), Vec2(60, 65), 10, 0.08f);
-// pAnimator2D->AddAnimation(L"Player_Down_Walk", pTex, Vec2(0, 260), Vec2(60, 65), 10, 0.08f);
+// pAnimator2D->AddAnimation(L"Player_Down_Walk", pTex, Vector2(0, 260), Vector2(60, 65), 10, 0.08f);
+// pAnimator2D->AddAnimation(L"Player_Left_Walk", pTex, Vector2(0, 325), Vector2(60, 65), 10, 0.08f);
+// pAnimator2D->AddAnimation(L"Player_Up_Walk", pTex, Vector2(0, 390), Vector2(60, 65), 10, 0.08f);
+// pAnimator2D->AddAnimation(L"Player_Down_Walk", pTex, Vector2(0, 260), Vector2(60, 65), 10, 0.08f);
 
 // pAnimator2D->AddAnimation(L"Explosion", L"Texture\\Animation\\Explosion\\", 0.03f);
 

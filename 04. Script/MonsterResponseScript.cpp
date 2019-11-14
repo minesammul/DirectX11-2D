@@ -38,10 +38,10 @@ void CMonsterResponseScript::SpawnMonster(void)
 				prefabInputScripts[scriptType] = prefabScript;
 			}
 
-			Vec3 paraentPosition = Object()->Transform()->GetLocalPos();
-			Vec3 paraentScale = Object()->Transform()->GetLocalScale();
-			Vec3 childPosition = monsterSpawns[spawnIndex]->Transform()->GetLocalPos();
-			Vec3 spawnPosition = paraentPosition;
+			Vector3 paraentPosition = Object()->Transform()->GetLocalPos();
+			Vector3 paraentScale = Object()->Transform()->GetLocalScale();
+			Vector3 childPosition = monsterSpawns[spawnIndex]->Transform()->GetLocalPos();
+			Vector3 spawnPosition = paraentPosition;
 
 			spawnPosition.x += childPosition.x*paraentScale.x;
 			spawnPosition.y += childPosition.y*paraentScale.y;
@@ -71,10 +71,10 @@ void CMonsterResponseScript::SpawnMonster(void)
 				prefabInputScripts[scriptType] = prefabScript;
 			}
 
-			Vec3 paraentPosition = Object()->Transform()->GetLocalPos();
-			Vec3 paraentScale = Object()->Transform()->GetLocalScale();
-			Vec3 childPosition = monsterSpawns[spawnIndex]->Transform()->GetLocalPos();
-			Vec3 spawnPosition = paraentPosition;
+			Vector3 paraentPosition = Object()->Transform()->GetLocalPos();
+			Vector3 paraentScale = Object()->Transform()->GetLocalScale();
+			Vector3 childPosition = monsterSpawns[spawnIndex]->Transform()->GetLocalPos();
+			Vector3 spawnPosition = paraentPosition;
 
 			spawnPosition.x += childPosition.x*paraentScale.x;
 			spawnPosition.y += childPosition.y*paraentScale.y;

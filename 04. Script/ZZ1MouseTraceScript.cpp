@@ -32,7 +32,7 @@ void CZZ1MouseTraceScript::start()
 
 void CZZ1MouseTraceScript::update()
 {
-	Vec3 mousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(CKeyMgr::GetInst()->GetMousePos(), mainCamera);
+	Vector3 mousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(CKeyMgr::GetInst()->GetMousePos(), mainCamera);
 	mousePosition.z = Object()->Transform()->GetLocalPos().z;
 	Object()->Transform()->SetLocalPos(mousePosition);
 }

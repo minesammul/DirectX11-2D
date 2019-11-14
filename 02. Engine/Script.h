@@ -38,10 +38,10 @@ public:
 
 	CLONE(CScript);
 		
-	void Instantiate(CResPtr<CPrefab>& _pPrefab, const Vec3& _vPos, map<UINT, CScript*> scripts);
+	void Instantiate(CResPtr<CPrefab>& _pPrefab, const Vector3& _vPos, map<UINT, CScript*> scripts);
 
 protected:
-	void Instantiate(CResPtr<CPrefab>& _pPrefab, const Vec3& _vPos, const wstring& _strLayerName);
+	void Instantiate(CResPtr<CPrefab>& _pPrefab, const Vector3& _vPos, const wstring& _strLayerName);
 	
 	virtual void OnCollisionEnter(CCollider2D* _pOther) {};
 	virtual void OnCollision(CCollider2D* _pOther) {};

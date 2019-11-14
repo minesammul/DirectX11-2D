@@ -191,9 +191,9 @@ void CToolApp::CreateTestScene()
 	CCollider2D* pCollider2D = new CCollider2D;
 	CAnimator2D* pAnimator2D = new CAnimator2D;
 
-	pTransform->SetLocalPos(Vec3(0.f, 0.f, 500.f));
-	pTransform->SetLocalScale(Vec3(100.f, 100.f, 1.f));
-	pTransform->SetLocalRot(Vec3(0.f, 0.f, 0.f));
+	pTransform->SetLocalPos(Vector3(0.f, 0.f, 500.f));
+	pTransform->SetLocalScale(Vector3(100.f, 100.f, 1.f));
+	pTransform->SetLocalRot(Vector3(0.f, 0.f, 0.f));
 
 	pMeshRender->SetMesh(CResMgr::GetInst()->FindRes<CMesh>(L"RectMesh"));
 	pMeshRender->SetMaterial(CResMgr::GetInst()->FindRes<CMaterial>(L"Std2DMtrl"));	
@@ -202,7 +202,7 @@ void CToolApp::CreateTestScene()
 	// Animation 로드
 	CResPtr<CTexture> pTex = CResMgr::GetInst()->FindRes<CTexture>(L"Link");
 		
-	pAnimator2D->AddAnimation(L"Player_Right_Walk", pTex, Vec2(0, 455), Vec2(60, 65), 10, 0.08f);
+	pAnimator2D->AddAnimation(L"Player_Right_Walk", pTex, Vector2(0, 455), Vector2(60, 65), 10, 0.08f);
 	pAnimator2D->PlayAnimation(L"Player_Right_Walk", false);
 
 
@@ -224,9 +224,9 @@ void CToolApp::CreateTestScene()
 	pMeshRender = new CMeshRender;
 	pCollider2D = new CCollider2D;
 
-	pTransform->SetLocalPos(Vec3(2.f, 0.f, 0.f));
-	pTransform->SetLocalScale(Vec3(1.f, 1.f, 1.f));
-	pTransform->SetLocalRot(Vec3(0.f, 0.f, 0.f));
+	pTransform->SetLocalPos(Vector3(2.f, 0.f, 0.f));
+	pTransform->SetLocalScale(Vector3(1.f, 1.f, 1.f));
+	pTransform->SetLocalRot(Vector3(0.f, 0.f, 0.f));
 
 	pMeshRender->SetMesh(CResMgr::GetInst()->FindRes<CMesh>(L"RectMesh"));
 	pMeshRender->SetMaterial(CResMgr::GetInst()->FindRes<CMaterial>(L"TextureMtrl"));
@@ -247,8 +247,8 @@ void CToolApp::CreateTestScene()
 
 		CGameObject* pClone = pChild->Clone();
 		pClone->SetName(szName);
-		pClone->Transform()->SetLocalPos(Vec3(-500.f + 150.f * (float)i, 250.f, 500.f));
-		pClone->Transform()->SetLocalScale(Vec3(100.f, 100.f, 1.f));
+		pClone->Transform()->SetLocalPos(Vector3(-500.f + 150.f * (float)i, 250.f, 500.f));
+		pClone->Transform()->SetLocalScale(Vector3(100.f, 100.f, 1.f));
 		pCurScene->AddObject(L"Monster", pClone);
 	}	
 

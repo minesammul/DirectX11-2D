@@ -7,8 +7,8 @@ private:
 	int maxHp;
 	int nowHp;
 
-	Vec3 maxHpBarScale;
-	Vec3 maxHPBarPosition;
+	Vector3 maxHpBarScale;
+	Vector3 maxHPBarPosition;
 
 public:
 	CUIScript();

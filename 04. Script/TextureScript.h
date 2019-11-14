@@ -10,7 +10,7 @@ private:
 	CResPtr<CMaterial> cloneMtrl;
 
 	float UValue;
-	Vec3 beforeMainCameraPosition;
+	Vector3 beforeMainCameraPosition;
 	CCamera* mainCamera;
 
 public:

@@ -5,8 +5,8 @@ class CBulletScript : public CScript
 {
 private:
 	float		m_fSpeed;
-	Vec3		direction;
-	Vec3 distance;
+	Vector3		direction;
+	Vector3 distance;
 	const float MAX_DISTANCE = 400.f;
 	bool isDestroy;
 	bool isEffectStart;
@@ -26,7 +26,7 @@ public:
 
 	void SetSpeed(float _fSpeed) { m_fSpeed = _fSpeed; }
 
-	void SetDirection(Vec3 direction) { this->direction = direction; }
+	void SetDirection(Vector3 direction) { this->direction = direction; }
 
 	void SetDelayTime(float time) { delayTime = time; }
 

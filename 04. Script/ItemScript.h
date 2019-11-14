@@ -21,7 +21,7 @@ private:
 	bool activeAttack;
 	float activeAttackTime;
 	bool isHit;
-	Vec3 hitPosition;
+	Vector3 hitPosition;
 
 public:
 	CItemScript();
@@ -42,6 +42,6 @@ public:
 	bool GetIsHit(void) { return isHit; }
 	void SetIsHit(bool hit) { isHit = hit; }
 
-	Vec3 GetHitPosition(void) { return hitPosition; }
+	Vector3 GetHitPosition(void) { return hitPosition; }
 };
 

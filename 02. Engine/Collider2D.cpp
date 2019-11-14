@@ -48,8 +48,8 @@ void CCollider2D::ClearMaterial()
 
 CCollider2D::CCollider2D()
 	: CComponent(COMPONENT_TYPE::COLLIDER2D)
-	, m_vOffset(Vec3(0.f, 0.f, 0.f))
-	, m_vScale(Vec3(1.f, 1.f, 0.f))
+	, m_vOffset(Vector3(0.f, 0.f, 0.f))
+	, m_vScale(Vector3(1.f, 1.f, 0.f))
 	, m_eType(COLLIDER2D_TYPE::END)
 	, m_pCurMtrl(nullptr)		
 	, m_iColCount(0)
@@ -68,9 +68,9 @@ void CCollider2D::update()
 
 void CCollider2D::finalupdate()
 {
-	Vec3 vPos = Transform()->GetLocalPos();
-	Vec3 vScale = Transform()->GetLocalScale();
-	Vec3 vRot = Transform()->GetLocalRot();
+	Vector3 vPos = Transform()->GetLocalPos();
+	Vector3 vScale = Transform()->GetLocalScale();
+	Vector3 vRot = Transform()->GetLocalRot();
 	
 	m_vFinalPos = vPos + m_vOffset;	   
 	m_vFinalScale = vScale * m_vScale;
@@ -173,15 +173,15 @@ void CCollider2D::OnCollisionExit(CCollider2D * _pOther)
 
 void CCollider2D::SaveToScene(FILE * _pFile)
 {
-	fwrite(&m_vOffset, sizeof(Vec3), 1, _pFile);
-	fwrite(&m_vScale, sizeof(Vec3), 1, _pFile);
+	fwrite(&m_vOffset, sizeof(Vector3), 1, _pFile);
+	fwrite(&m_vScale, sizeof(Vector3), 1, _pFile);
 	fwrite(&m_eType, sizeof(UINT), 1, _pFile);
 }
 
 void CCollider2D::LoadFromScene(FILE * _pFile)
 {
-	fread(&m_vOffset, sizeof(Vec3), 1, _pFile);
-	fread(&m_vScale, sizeof(Vec3), 1, _pFile);
+	fread(&m_vOffset, sizeof(Vector3), 1, _pFile);
+	fread(&m_vScale, sizeof(Vector3), 1, _pFile);
 	fread(&m_eType, sizeof(UINT), 1, _pFile);
 
 	SetColliderType(m_eType);

@@ -16,9 +16,9 @@ void MonsterWalk::Move(CMonsterScript * monster)
 {
 	monster->SetMonsterDirectionImage();
 
-	Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+	Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 
-	Vec3 monsterDirection = monster->GetMonsterDirection();
+	Vector3 monsterDirection = monster->GetMonsterDirection();
 
 	monsterPosition.x += monsterDirection.x*WALK_SPEED*DT;
 

@@ -11,7 +11,7 @@ private:
 	float nowDashPower;
 	float nowMoveDistance;
 	bool dashStart;
-	Vec3 monsterDashDirection;
+	Vector3 monsterDashDirection;
 
 public:
 	MonsterDash();

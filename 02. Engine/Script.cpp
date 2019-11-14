@@ -52,7 +52,7 @@ void CScript::InsertLayerToPrefab(CGameObject * prefabObject, CGameObject * refe
 	CEventMgr::GetInst()->AddEvent(event);
 }
 
-void CScript::Instantiate(CResPtr<CPrefab>& _pPrefab, const Vec3 & _vPos, const wstring & _strLayerName)
+void CScript::Instantiate(CResPtr<CPrefab>& _pPrefab, const Vector3 & _vPos, const wstring & _strLayerName)
 {	
 	CGameObject* pClone = _pPrefab->Instantiate();
 	pClone->Transform()->SetLocalPos(_vPos);
@@ -63,7 +63,7 @@ void CScript::Instantiate(CResPtr<CPrefab>& _pPrefab, const Vec3 & _vPos, const 
 	CreateObject(pClone);	
 }
 
-void CScript::Instantiate(CResPtr<CPrefab>& _pPrefab, const Vec3 & _vPos, map<UINT, CScript*> scripts)
+void CScript::Instantiate(CResPtr<CPrefab>& _pPrefab, const Vector3 & _vPos, map<UINT, CScript*> scripts)
 {
 	CGameObject* pClone = _pPrefab->Instantiate();
 	pClone->Transform()->SetLocalPos(_vPos);

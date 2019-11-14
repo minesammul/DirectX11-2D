@@ -8,8 +8,8 @@ ItemKind::ItemKind()
 {
 	//임시코드 나중에 플레이어한테서 받아와야한다.
 	this->itemKindStrategy = new ItemSwordKindStrategy;
-	itemDirection = Vec3(0.f, 1.f, 0.f);
-	itemRotate = Vec3(0.f, 0.f, 0.f);
+	itemDirection = Vector3(0.f, 1.f, 0.f);
+	itemRotate = Vector3(0.f, 0.f, 0.f);
 }
 
 

@@ -53,7 +53,7 @@ void PlayerActionStateDash::ChangeDashToIdle(CPlayerScript * player)
 
 void PlayerActionStateDash::CheckDashDistance(CPlayerScript * player)
 {
-	Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+	Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 	playerPosition.x += dashDirection.x*DASH_POWER*DT;
 	playerPosition.y += dashDirection.y*DASH_POWER*DT;
 	player->Object()->Transform()->SetLocalPos(playerPosition);
@@ -153,7 +153,7 @@ void PlayerActionStateDash::CreateDashAfterImage(CPlayerScript * player)
 			{
 				CZZ2AfterImageScript* afterImageScript = dynamic_cast<CZZ2AfterImageScript*>(prefabScript);
 
-				Vec3 mouseDirection = player->GetMouseDirection();
+				Vector3 mouseDirection = player->GetMouseDirection();
 
 				if (mouseDirection.x > 0)
 				{
@@ -168,7 +168,7 @@ void PlayerActionStateDash::CreateDashAfterImage(CPlayerScript * player)
 			prefabInputScripts[scriptType] = prefabScript;
 		}
 
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		player->Instantiate(dashAfterImage, playerPosition, prefabInputScripts);
 	}
 }

@@ -6,11 +6,11 @@ class ItemKind : public ItemComponent
 {
 private:
 	ItemKindStrategy* itemKindStrategy;
-	Vec3 itemDirection;
-	Vec3 mouseDirection;
-	Vec3 itemAxisRotate;
-	Vec3 itemRotate;
-	Vec3 itemPosition;
+	Vector3 itemDirection;
+	Vector3 mouseDirection;
+	Vector3 itemAxisRotate;
+	Vector3 itemRotate;
+	Vector3 itemPosition;
 
 public:
 	ItemKind();
@@ -28,19 +28,19 @@ public:
 
 	void SetKindStrategy(ItemKindStrategy* itemKindStrategy) { this->itemKindStrategy = itemKindStrategy; }
 	
-	Vec3 GetItemDirection(void) { return itemDirection; }
-	void SetItemDirection(Vec3 direction) { itemDirection = direction; }
+	Vector3 GetItemDirection(void) { return itemDirection; }
+	void SetItemDirection(Vector3 direction) { itemDirection = direction; }
 
-	Vec3 GetMouseDirection(void) { return mouseDirection; }
-	void SetMouseDirection(Vec3 direction) { mouseDirection = direction; }
+	Vector3 GetMouseDirection(void) { return mouseDirection; }
+	void SetMouseDirection(Vector3 direction) { mouseDirection = direction; }
 
-	Vec3 GetItemAxisRotate(void) { return itemAxisRotate; }
-	void SetItemAxisRotate(Vec3 rotate) { itemAxisRotate = rotate; }
+	Vector3 GetItemAxisRotate(void) { return itemAxisRotate; }
+	void SetItemAxisRotate(Vector3 rotate) { itemAxisRotate = rotate; }
 
-	Vec3 GetItemRotate(void) { return itemRotate; }
-	void SetItemRotate(Vec3 rotate) { itemRotate = rotate; }
+	Vector3 GetItemRotate(void) { return itemRotate; }
+	void SetItemRotate(Vector3 rotate) { itemRotate = rotate; }
 
-	Vec3 GetItemPosition(void) { return itemPosition; }
-	void SetItemPosition(Vec3 position) { itemPosition = position; }
+	Vector3 GetItemPosition(void) { return itemPosition; }
+	void SetItemPosition(Vector3 position) { itemPosition = position; }
 };
 

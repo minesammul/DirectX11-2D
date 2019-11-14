@@ -18,11 +18,11 @@ void MonsterCircleShotBullet::Attack(CMonsterScript * monster)
 {
 	monster->SetMonsterDirectionImage();
 
-	Vec3 bulletDirection = monster->GetMonsterDirection();
+	Vector3 bulletDirection = monster->GetMonsterDirection();
 
 	for (int bulletCount = 0; bulletCount < 16; bulletCount++)
 	{
-		Vec3 bulletCreateDirection = Vec3(1.0f, 0.0f, 0.0f);
+		Vector3 bulletCreateDirection = Vector3(1.0f, 0.0f, 0.0f);
 		float radian = (2 * g_XMPi.f[0] / 16) * bulletCount;
 		float xPosition = cosf(radian);
 		float yPosition = sinf(radian);
@@ -52,7 +52,7 @@ void MonsterCircleShotBullet::Attack(CMonsterScript * monster)
 			prefabInputScripts[scriptType] = prefabScript;
 		}
 
-		Vec3 bulletPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 bulletPosition = monster->Object()->Transform()->GetLocalPos();
 		bulletPosition.x += bulletCreateDirection.x*CREATE_INTERVAL;
 		bulletPosition.y += bulletCreateDirection.y*CREATE_INTERVAL;
 

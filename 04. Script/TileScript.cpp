@@ -46,26 +46,26 @@ void CTileScript::EditMoveTileMap()
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_A) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
+		Vector3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
 		ObjectPosition.x += TILE_MOVE_SPEED * DT;
 		tileMapCamera->Object()->Transform()->SetLocalPos(ObjectPosition);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_D) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
+		Vector3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
 		ObjectPosition.x -= TILE_MOVE_SPEED * DT;
 		tileMapCamera->Object()->Transform()->SetLocalPos(ObjectPosition);
 	}
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_W) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
+		Vector3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
 		ObjectPosition.y -= TILE_MOVE_SPEED * DT;
 		tileMapCamera->Object()->Transform()->SetLocalPos(ObjectPosition);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_S) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
+		Vector3 ObjectPosition = tileMapCamera->Object()->Transform()->GetLocalPos();
 		ObjectPosition.y += TILE_MOVE_SPEED * DT;
 		tileMapCamera->Object()->Transform()->SetLocalPos(ObjectPosition);
 	}
@@ -92,8 +92,8 @@ void CTileScript::ClickTileSetTile()
 		if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_LBTN) == KEY_STATE::STATE_TAB)
 		{
 			DirectX::XMVECTOR mousePickingPosition = CSceneMgr::GetInst()->GetMousePickingPosition();
-			Vec3 objectScale = Object()->Transform()->GetLocalScale();
-			Vec3 objectPosition = Object()->Transform()->GetLocalPos();
+			Vector3 objectScale = Object()->Transform()->GetLocalScale();
+			Vector3 objectPosition = Object()->Transform()->GetLocalPos();
 
 			int gridX = mousePickingPosition.vector4_f32[0] + objectScale.x / 2;
 			int gridY = (mousePickingPosition.vector4_f32[1] - objectScale.y / 2)*(-1);

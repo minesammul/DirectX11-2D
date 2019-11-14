@@ -24,7 +24,7 @@ void CGravityScript::update()
 
 	nowGravityValue += GRAVITY_VALUE;
 
-	Vec3 objectPosition = Object()->Transform()->GetLocalPos();
+	Vector3 objectPosition = Object()->Transform()->GetLocalPos();
 	objectPosition.y -= nowGravityValue * DT;
 	Object()->Transform()->SetLocalPos(objectPosition);
 }

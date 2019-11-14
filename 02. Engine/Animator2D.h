@@ -23,9 +23,9 @@ public:
 	void UpdateData();
 
 public:
-	void AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vec2 _vLT, Vec2 _vCropSize, int _iFrmCount, float _fTerm);
+	void AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vector2 _vLT, Vector2 _vCropSize, int _iFrmCount, float _fTerm);
 	void AddAnimation(const wstring& _strKey, const wstring& _strFolder, float _fTerm);
-	void AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vec2 _vLT, Vec2 _vCropSize, Vec2 offset,int _iFrmCount, float _fTerm);
+	void AddAnimation(const wstring & _strKey, CResPtr<CTexture> _pTex, Vector2 _vLT, Vector2 _vCropSize, Vector2 offset,int _iFrmCount, float _fTerm);
 
 	void PlayAnimation(const wstring& _strKey, bool _bRepeat);
 	void DeleteAnimation(const wstring& _strKey);

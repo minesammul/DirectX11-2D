@@ -5,21 +5,21 @@ class CTransform :
 	public CComponent
 {
 private:
-	Vec3		m_vLocalPos;
-	Vec3		m_vLocalScale;
-	Vec3		m_vLocalRot;
+	Vector3		m_vLocalPos;
+	Vector3		m_vLocalScale;
+	Vector3		m_vLocalRot;
 
 
 	Matrix		m_matWorld;
 
 public:
-	void SetLocalPos(const Vec3& _vPos) { m_vLocalPos = _vPos; }
-	void SetLocalScale(const Vec3& _vScale) { m_vLocalScale = _vScale; }
-	void SetLocalRot(const Vec3& _vRot) { m_vLocalRot = _vRot; }
+	void SetLocalPos(const Vector3& _vPos) { m_vLocalPos = _vPos; }
+	void SetLocalScale(const Vector3& _vScale) { m_vLocalScale = _vScale; }
+	void SetLocalRot(const Vector3& _vRot) { m_vLocalRot = _vRot; }
 	
-	const Vec3& GetLocalPos() {		return m_vLocalPos ; }
-	const Vec3& GetLocalScale() {	return m_vLocalScale; }
-	const Vec3& GetLocalRot() {		return m_vLocalRot ; }
+	const Vector3& GetLocalPos() {		return m_vLocalPos ; }
+	const Vector3& GetLocalScale() {	return m_vLocalScale; }
+	const Vector3& GetLocalRot() {		return m_vLocalRot ; }
 
 	const Matrix& GetWorldMat() { return m_matWorld; }
 

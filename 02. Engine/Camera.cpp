@@ -26,7 +26,7 @@ void CCamera::update()
 
 void CCamera::finalupdate()
 {
-	Vec3 vPos = Transform()->GetLocalPos();
+	Vector3 vPos = Transform()->GetLocalPos();
 
 	// View 행렬 만들기
 	m_matView = XMMatrixIdentity();

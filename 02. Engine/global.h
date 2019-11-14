@@ -15,10 +15,8 @@ using namespace DirectX::PackedVector;
 #pragma comment(lib, "d3dcompiler")
 #pragma comment(lib, "dxguid")
 
-typedef XMFLOAT2 Vec2;
-//typedef XMFLOAT3 Vec3;
-typedef XMFLOAT4 Vec4;
-typedef XMMATRIX Matrix;
+#include "SimpleMath.h"
+using namespace DirectX::SimpleMath;
 
 #include <vector>
 #include <list>

@@ -180,7 +180,6 @@
     <ClInclude Include="Animation2D.h">
       <Filter>EngineCode\06. Module</Filter>
     </ClInclude>
-    <ClInclude Include="MousePicking.h" />
     <ClInclude Include="SimpleMath.h">
       <Filter>EngineCode\06. Module</Filter>
     </ClInclude>
@@ -297,7 +296,6 @@
     <ClCompile Include="Animation2D.cpp">
       <Filter>EngineCode\06. Module</Filter>
     </ClCompile>
-    <ClCompile Include="MousePicking.cpp" />
     <ClCompile Include="SimpleMath.cpp">
       <Filter>EngineCode\06. Module</Filter>
     </ClCompile>

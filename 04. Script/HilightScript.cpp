@@ -44,6 +44,6 @@ void CHilightScript::update()
 		}		
 	}
 
-	Vec2 vRatio = Vec2(m_fCurAddRatio, m_fCurSubRatio);
+	Vector2 vRatio = Vector2(m_fCurAddRatio, m_fCurSubRatio);
 	MeshRender()->GetSharedMaterial()->SetData(SHADER_PARAM::VEC2_0, &vRatio);
 }

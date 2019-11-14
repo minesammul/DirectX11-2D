@@ -70,19 +70,19 @@ void AddAnimFile::OnBnClickedOk()
 	float originSizeX = (pTex->GetWidth() / intFrameCount) / 5;
 	float originSizeY = pTex->GetHeight() / 5;
 
-	Vec2 lt;
+	Vector2 lt;
 	//lt.x = originSizeX;
 	//lt.y = originSizeY;
 	lt.x = 0;
 	lt.y = 0;
 
-	Vec2 sliceSize;
+	Vector2 sliceSize;
 	sliceSize.x = originSizeX * 3;
 	sliceSize.y = originSizeY * 3;
 	//sliceSize.x = (pTex->GetWidth() / intFrameCount);
 	//sliceSize.y = pTex->GetHeight();
 
-	Vec2 offset;
+	Vector2 offset;
 	//offset.x = 0.f;
 	//offset.y = 0.f;
 	offset.x = (pTex->GetWidth() / intFrameCount) / 5;

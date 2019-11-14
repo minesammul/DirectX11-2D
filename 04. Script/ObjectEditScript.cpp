@@ -27,7 +27,7 @@ void CObjectEditScript::update()
 
 		if (editObject->GetID() == clickObject->GetID())
 		{
-			Vec3 editObjectPosition = editObject->Transform()->GetLocalPos();
+			Vector3 editObjectPosition = editObject->Transform()->GetLocalPos();
 
 			POINT mousePosition = CKeyMgr::GetInst()->GetMousePos();
 
@@ -43,7 +43,7 @@ void CObjectEditScript::update()
 				}
 			}
 
-			Vec3 sceneMousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(
+			Vector3 sceneMousePosition = CSceneMgr::GetInst()->CalculationSceneMousePosition(
 				mousePosition,
 				camera
 			);
@@ -58,26 +58,26 @@ void CObjectEditScript::update()
 	//Move
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_A) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectPosition = editObject->Transform()->GetLocalPos();
+		Vector3 editObjectPosition = editObject->Transform()->GetLocalPos();
 		editObjectPosition.x -= 0.1f;
 		editObject->Transform()->SetLocalPos(editObjectPosition);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_D) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectPosition = editObject->Transform()->GetLocalPos();
+		Vector3 editObjectPosition = editObject->Transform()->GetLocalPos();
 		editObjectPosition.x += 0.1f;
 		editObject->Transform()->SetLocalPos(editObjectPosition);
 	}
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_W) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectPosition = editObject->Transform()->GetLocalPos();
+		Vector3 editObjectPosition = editObject->Transform()->GetLocalPos();
 		editObjectPosition.y += 0.1f;
 		editObject->Transform()->SetLocalPos(editObjectPosition);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_S) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectPosition = editObject->Transform()->GetLocalPos();
+		Vector3 editObjectPosition = editObject->Transform()->GetLocalPos();
 		editObjectPosition.y -= 0.1f;
 		editObject->Transform()->SetLocalPos(editObjectPosition);
 	}
@@ -85,26 +85,26 @@ void CObjectEditScript::update()
 	//Scale
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_Z) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectScale = editObject->Transform()->GetLocalScale();
+		Vector3 editObjectScale = editObject->Transform()->GetLocalScale();
 		editObjectScale.x += 1.f;
 		editObject->Transform()->SetLocalScale(editObjectScale);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_X) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectScale = editObject->Transform()->GetLocalScale();
+		Vector3 editObjectScale = editObject->Transform()->GetLocalScale();
 		editObjectScale.x -= 1.f;
 		editObject->Transform()->SetLocalScale(editObjectScale);
 	}
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_C) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectScale = editObject->Transform()->GetLocalScale();
+		Vector3 editObjectScale = editObject->Transform()->GetLocalScale();
 		editObjectScale.y += 1.f;
 		editObject->Transform()->SetLocalScale(editObjectScale);
 	}
 	else if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_V) == KEY_STATE::STATE_HOLD)
 	{
-		Vec3 editObjectScale = editObject->Transform()->GetLocalScale();
+		Vector3 editObjectScale = editObject->Transform()->GetLocalScale();
 		editObjectScale.y -= 1.f;
 		editObject->Transform()->SetLocalScale(editObjectScale);
 	}

@@ -29,15 +29,15 @@ void MonsterJumpTackle::Attack(CMonsterScript * monster)
 		monster->SetMonsterDirectionImage();
 		if (firstJumping == false)
 		{
-			Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+			Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 			monsterPosition.y += 20.f;
 			monster->Object()->Transform()->SetLocalPos(monsterPosition);
 			firstJumping = true;
 		}
 		else
 		{
-			Vec3 monsterDirection = monster->GetMonsterDirection();
-			Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+			Vector3 monsterDirection = monster->GetMonsterDirection();
+			Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 
 			monsterPosition.x += monsterDirection.x*200.f*DT;
 			monsterPosition.y += 200.f*DT;

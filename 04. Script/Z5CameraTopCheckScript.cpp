@@ -21,8 +21,8 @@ void CZ5CameraTopCheckScript::OnCollision(CCollider2D * _pOther)
 {
 	if (isCollision == true)
 	{
-		Vec3 cameraFramePosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
-		Vec3 cameraFrameScale = Object()->GetParent()->Collider2D()->GetFinalScale();
+		Vector3 cameraFramePosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
+		Vector3 cameraFrameScale = Object()->GetParent()->Collider2D()->GetFinalScale();
 		cameraFramePosition.y = _pOther->Object()->Transform()->GetLocalPos().y - (_pOther->Object()->Transform()->GetLocalScale().y / 2) - (cameraFrameScale.y / 2);
 		Object()->GetParent()->Transform()->SetLocalPos(cameraFramePosition);
 	}

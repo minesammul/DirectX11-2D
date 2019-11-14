@@ -267,7 +267,7 @@ void CAnimator2DDlg::OnEnKillfocusEditOffsetX()
 	CString offsetXFormat;
 	editOffsetX.GetWindowTextW(offsetXFormat);
 	float offsetX = _wtof(offsetXFormat);
-	Vec2 offset = GetTarget()->Animator2D()->GetCurAnim()->GetNowFrameData().LTOffset;
+	Vector2 offset = GetTarget()->Animator2D()->GetCurAnim()->GetNowFrameData().LTOffset;
 	offset.x = offsetX;
 	GetTarget()->Animator2D()->GetCurAnim()->SetNowFrameOffset(offset);
 
@@ -288,7 +288,7 @@ void CAnimator2DDlg::OnEnKillfocusEditOffsetY()
 	CString offsetYFormat;
 	editOffsetY.GetWindowTextW(offsetYFormat);
 	float offsetY = _wtof(offsetYFormat);
-	Vec2 offset = GetTarget()->Animator2D()->GetCurAnim()->GetNowFrameData().LTOffset;
+	Vector2 offset = GetTarget()->Animator2D()->GetCurAnim()->GetNowFrameData().LTOffset;
 	offset.y = offsetY;
 	GetTarget()->Animator2D()->GetCurAnim()->SetNowFrameOffset(offset);
 

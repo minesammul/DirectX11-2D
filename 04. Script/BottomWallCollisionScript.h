@@ -8,7 +8,7 @@ class CGravityScript;
 class CBottomWallCollisionScript : public CScript
 {
 private:
-	Vec3 collisionPosition;
+	Vector3 collisionPosition;
 	bool collisionOn;
 
 	CRightBottomWallCollisionScript* rightBottomWallCollisionScript;
@@ -30,6 +30,6 @@ public:
 	void SetCollision(bool collision) { collisionOn = collision; }
 	bool GetCollision(void) { return collisionOn; }
 
-	Vec3 GetCollisionPosition(void) { return collisionPosition; }
+	Vector3 GetCollisionPosition(void) { return collisionPosition; }
 };
 

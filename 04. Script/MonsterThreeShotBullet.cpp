@@ -20,11 +20,11 @@ void MonsterThreeShotBullet::Attack(CMonsterScript * monster)
 
 	for (int bulletCount=0; bulletCount < 3; bulletCount++)
 	{
-		Vec3 bulletMiddleDirection = monster->GetMonsterDirection();
-		Vec3 mosnterNomalVector = Vec3(1.f, 0.f, 0.f);
+		Vector3 bulletMiddleDirection = monster->GetMonsterDirection();
+		Vector3 mosnterNomalVector = Vector3(1.f, 0.f, 0.f);
 		mosnterNomalVector = XMVector2Normalize(mosnterNomalVector);
 
-		Vec3 bulletMiddleDirectionAngle = XMVector2AngleBetweenNormals(
+		Vector3 bulletMiddleDirectionAngle = XMVector2AngleBetweenNormals(
 			bulletMiddleDirection,
 			mosnterNomalVector
 		);
@@ -43,13 +43,13 @@ void MonsterThreeShotBullet::Attack(CMonsterScript * monster)
 		float bulletLastDirectionDegree = degree + 30.f;
 		float bulletLastDirectionRadian = XMConvertToRadians(bulletLastDirectionDegree);
 
-		Vec3 bulletFirstDirection = Vec3(
+		Vector3 bulletFirstDirection = Vector3(
 			cosf(bulletFirstDirectionRadian),
 			sinf(bulletFirstDirectionRadian),
 			0.f
 		);
 
-		Vec3 bulletLastDirection = Vec3(
+		Vector3 bulletLastDirection = Vector3(
 			cosf(bulletLastDirectionRadian),
 			sinf(bulletLastDirectionRadian),
 			0.f
@@ -93,7 +93,7 @@ void MonsterThreeShotBullet::Attack(CMonsterScript * monster)
 		}
 
 
-		Vec3 bulletFirstPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 bulletFirstPosition = monster->Object()->Transform()->GetLocalPos();
 		bulletFirstPosition.x += bulletFirstDirection.x*20.f;
 		bulletFirstPosition.y += bulletFirstDirection.y*20.f;
 
@@ -102,7 +102,7 @@ void MonsterThreeShotBullet::Attack(CMonsterScript * monster)
 		monster->Instantiate(bullet, bulletFirstPosition, prefabInputFirstScripts);
 
 
-		Vec3 bulletMiddlePosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 bulletMiddlePosition = monster->Object()->Transform()->GetLocalPos();
 		bulletMiddlePosition.x += bulletMiddleDirection.x*20.f;
 		bulletMiddlePosition.y += bulletMiddleDirection.y*20.f;
 
@@ -111,7 +111,7 @@ void MonsterThreeShotBullet::Attack(CMonsterScript * monster)
 		monster->Instantiate(bullet, bulletMiddlePosition, prefabInputMiddleScripts);
 
 
-		Vec3 bulletLastPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 bulletLastPosition = monster->Object()->Transform()->GetLocalPos();
 		bulletLastPosition.x += bulletLastDirection.x*20.f;
 		bulletLastPosition.y += bulletLastDirection.y*20.f;
 

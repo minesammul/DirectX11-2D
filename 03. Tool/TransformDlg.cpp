@@ -89,17 +89,29 @@ void CTransformDlg::update(CGameObject * _pTarget)
 
 	CString str;
 	CTransform* pTrans = GetTarget()->Transform();
-	Vec3 vRot = pTrans->GetLocalRot();	
+	Vector3 vRot = pTrans->GetLocalRot();	
 	
 	vRot.x = GetAngle(vRot.x);
 	vRot.y = GetAngle(vRot.y);
 	vRot.z = GetAngle(vRot.z);
 
-	Vec3 arrData[3] = { pTrans->GetLocalPos() , pTrans->GetLocalScale() , vRot };
+	Vector3 arrData[3] = { pTrans->GetLocalPos() , pTrans->GetLocalScale() , vRot };
 
 	for (UINT i = 0; i < 9; ++i)
 	{
-		str.Format(L"%f", arrData[i / 3][i % 3]);
+		if (i % 3 == 0)
+		{
+			str.Format(L"%f", arrData[i / 3].x);
+		}
+		else if (i % 3 == 1)
+		{
+			str.Format(L"%f", arrData[i / 3].y);
+		}
+		else if (i % 3 == 2)
+		{
+			str.Format(L"%f", arrData[i / 3].z);
+		}
+
 		m_edit[i].SetWindowTextW(str);
 	}
 
@@ -131,7 +143,7 @@ void CTransformDlg::OnEnChangeEdit(UINT _id)
 
 	CString str;
 
-	Vec3 arrData[3] = {};
+	Vector3 arrData[3] = {};
 
 	for (UINT i = 0; i < 9; ++i)
 	{
@@ -139,7 +151,18 @@ void CTransformDlg::OnEnChangeEdit(UINT _id)
 
 		float fData = _wtof(str);
 
-		arrData[i / 3][i % 3] = fData;
+		if (i % 3 == 0)
+		{
+			arrData[i / 3].x = fData;
+		}
+		else if (i % 3 == 1)
+		{
+			arrData[i / 3].y = fData;
+		}
+		else if (i % 3 == 2)
+		{
+			arrData[i / 3].z = fData;
+		}
 	}
 
 	pTrans->SetLocalPos(arrData[0]);

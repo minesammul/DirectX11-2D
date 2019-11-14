@@ -7,10 +7,10 @@ class CBlendState :
 private:
 	ID3D11BlendState*		m_pState;
 	D3D11_BLEND_DESC		m_tDesc;
-	Vec4					m_vFactor;
+	Vector4					m_vFactor;
 
 public:
-	void SetFactor(const Vec4& _vFactor) { m_vFactor = _vFactor; }
+	void SetFactor(const Vector4& _vFactor) { m_vFactor = _vFactor; }
 
 public:
 	virtual void UpdateData();

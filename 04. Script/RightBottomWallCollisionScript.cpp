@@ -83,8 +83,8 @@ void CRightBottomWallCollisionScript::OnCollision(CCollider2D * _pOther)
 
 		float y = ((y2 - y1) / (x2 - x1))*(x - x1) + y1;
 
-		Vec3 characterPosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
-		Vec3 characterScale = Object()->GetParent()->Collider2D()->GetFinalScale();
+		Vector3 characterPosition = Object()->GetParent()->Collider2D()->GetFinalPositon();
+		Vector3 characterScale = Object()->GetParent()->Collider2D()->GetFinalScale();
 		characterPosition.y = y + (characterScale.y / 2) - 7.f;
 		Object()->GetParent()->Transform()->SetLocalPos(characterPosition);
 	}

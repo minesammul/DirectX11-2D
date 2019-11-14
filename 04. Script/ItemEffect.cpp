@@ -37,10 +37,10 @@ void ItemEffect::Update(CItemScript * item)
 
 void ItemEffect::CreateEffectPrefab(CItemScript * item)
 {
-	Vec3 mouseDirection = item->GetItemKind()->GetMouseDirection();
-	Vec3 effectDirection = Vec3(0.f, 1.f, 0.f);
+	Vector3 mouseDirection = item->GetItemKind()->GetMouseDirection();
+	Vector3 effectDirection = Vector3(0.f, 1.f, 0.f);
 	mouseDirection = XMVector2Normalize(mouseDirection);
-	Vec3 dotValue = XMVector2Dot(effectDirection, mouseDirection);
+	Vector3 dotValue = XMVector2Dot(effectDirection, mouseDirection);
 
 	float radian = acosf(dotValue.x);
 	if (mouseDirection.x > 0)
@@ -48,7 +48,7 @@ void ItemEffect::CreateEffectPrefab(CItemScript * item)
 		radian = g_XMPi.f[0] * 2 - radian;
 	}
 
-	Vec3 effectRotate = Vec3(0.f, 0.f, radian);
+	Vector3 effectRotate = Vector3(0.f, 0.f, radian);
 
 	map<UINT, CScript*> prefabInputScripts;
 
@@ -71,15 +71,15 @@ void ItemEffect::CreateEffectPrefab(CItemScript * item)
 		prefabInputScripts[scriptType] = prefabScript;
 	}
 
-	Vec3 playerPosition = item->ParentObject()->GetParent()->Transform()->GetLocalPos();
-	Vec3 playerColliderScale = item->ParentObject()->GetParent()->Collider2D()->GetFinalScale();
+	Vector3 playerPosition = item->ParentObject()->GetParent()->Transform()->GetLocalPos();
+	Vector3 playerColliderScale = item->ParentObject()->GetParent()->Collider2D()->GetFinalScale();
 
-	Vec3 itemRotateAxisPosition = item->ParentObject()->Transform()->GetLocalPos();
-	Vec3 itemRotateAxisScale = item->ParentObject()->Transform()->GetLocalScale();
+	Vector3 itemRotateAxisPosition = item->ParentObject()->Transform()->GetLocalPos();
+	Vector3 itemRotateAxisScale = item->ParentObject()->Transform()->GetLocalScale();
 
-	Vec3 itemPosition = item->Object()->Transform()->GetLocalPos();
+	Vector3 itemPosition = item->Object()->Transform()->GetLocalPos();
 
-	Vec3 effectPosition = playerPosition;
+	Vector3 effectPosition = playerPosition;
 
 	effectPosition.x += (itemRotateAxisPosition.x * playerColliderScale.x);
 	effectPosition.y += (itemRotateAxisPosition.y * playerColliderScale.y);
@@ -122,7 +122,7 @@ void ItemEffect::CreateHitEffectPrefab(CItemScript * item)
 				auto generator = bind(distribution, engine);
 
 				float randomZRadian = generator();
-				Vec3 effectRotate = Vec3(0.f, 0.f, randomZRadian);
+				Vector3 effectRotate = Vector3(0.f, 0.f, randomZRadian);
 
 				effectScript->SetRotate(effectRotate);
 			}
@@ -130,7 +130,7 @@ void ItemEffect::CreateHitEffectPrefab(CItemScript * item)
 			prefabInputScripts[scriptType] = prefabScript;
 		}
 
-		Vec3 effectPosition = item->GetHitPosition();
+		Vector3 effectPosition = item->GetHitPosition();
 		
 	
 		int randomXValue = (rand() % 100) - 50;

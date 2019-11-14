@@ -63,15 +63,15 @@ void CPotalScript::OnCollisionEnter(CCollider2D * _pOther)
 
 	if (objectName.compare(L"Player") == 0)
 	{
-		Vec3 playerPosition = _pOther->GetFinalPositon();
-		Vec3 potalPosition = Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = _pOther->GetFinalPositon();
+		Vector3 potalPosition = Object()->Transform()->GetLocalPos();
 		if (playerPosition.x < potalPosition.x)
 		{
 			//Left to Right
-			Vec3 potalRightPosition = potalPosition;
+			Vector3 potalRightPosition = potalPosition;
 			potalRightPosition.x += Object()->Transform()->GetLocalScale().x / 2;
 
-			Vec3 playerPotalPosition = potalRightPosition;
+			Vector3 playerPotalPosition = potalRightPosition;
 			playerPotalPosition.x += _pOther->GetFinalScale().x;
 
 			_pOther->Object()->Transform()->SetLocalPos(playerPotalPosition);
@@ -79,10 +79,10 @@ void CPotalScript::OnCollisionEnter(CCollider2D * _pOther)
 		else
 		{
 			//Right to Left
-			Vec3 potalRightPosition = potalPosition;
+			Vector3 potalRightPosition = potalPosition;
 			potalRightPosition.x -= Object()->Transform()->GetLocalScale().x / 2;
 
-			Vec3 playerPotalPosition = potalRightPosition;
+			Vector3 playerPotalPosition = potalRightPosition;
 			playerPotalPosition.x -= _pOther->GetFinalScale().x;
 
 			_pOther->Object()->Transform()->SetLocalPos(playerPotalPosition);

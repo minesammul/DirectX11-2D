@@ -3,8 +3,8 @@
 class PlayerActionStateDash : public PlayerActionState
 {
 private:
-	Vec3 dashDirection;
-	Vec3 startPosition;
+	Vector3 dashDirection;
+	Vector3 startPosition;
 	const float DASH_DISTANCE = 150.f;
 	const float DASH_POWER = 2000.f;
 
@@ -35,7 +35,7 @@ public:
 		return &instance;
 	}
 
-	void SetDashDirection(Vec3 direction) { dashDirection = direction; }
-	void SetStartPosition(Vec3 position) { startPosition = position; }
+	void SetDashDirection(Vector3 direction) { dashDirection = direction; }
+	void SetStartPosition(Vector3 position) { startPosition = position; }
 };
 

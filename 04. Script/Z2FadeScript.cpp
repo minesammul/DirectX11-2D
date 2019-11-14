@@ -41,7 +41,7 @@ void CZ2FadeScript::update()
 		cloneMtrl->SetData(SHADER_PARAM::FLOAT_0, &alphaValue);
 
 		//float colorMulValue = COLOR_MULIT_VALUE;
-		Vec4 colorMulValue = Vec4(COLOR_MULIT_VALUE, COLOR_MULIT_VALUE, COLOR_MULIT_VALUE, COLOR_MULIT_VALUE);
+		Vector4 colorMulValue = Vector4(COLOR_MULIT_VALUE, COLOR_MULIT_VALUE, COLOR_MULIT_VALUE, COLOR_MULIT_VALUE);
 		cloneMtrl->SetData(SHADER_PARAM::VEC4_0, &colorMulValue);
 
 		if (alphaValue <= 0.f)
@@ -50,8 +50,8 @@ void CZ2FadeScript::update()
 			alphaValue = 1.f;
 		}
 
-		Vec3 cameraPosition = mainCamera->Object()->Transform()->GetLocalPos();
-		Vec3 objectPosition = Object()->Transform()->GetLocalPos();
+		Vector3 cameraPosition = mainCamera->Object()->Transform()->GetLocalPos();
+		Vector3 objectPosition = Object()->Transform()->GetLocalPos();
 		objectPosition.x = cameraPosition.x;
 		objectPosition.y = cameraPosition.y;
 

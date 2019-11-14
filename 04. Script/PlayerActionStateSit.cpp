@@ -20,7 +20,7 @@ void PlayerActionStateSit::Update(CPlayerScript * player)
 
 	if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_SPACE) == KEY_STATE::STATE_TAB)
 	{
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 		playerPosition.y -= 10.f;
 		player->Object()->Transform()->SetLocalPos(playerPosition);
 

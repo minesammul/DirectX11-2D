@@ -126,8 +126,8 @@ void CTileMapScript::EditTileMap()
 				if (CKeyMgr::GetInst()->GetKeyState(KEY_TYPE::KEY_LBTN) == KEY_STATE::STATE_HOLD)
 				{
 					DirectX::XMVECTOR mousePickingPosition = CSceneMgr::GetInst()->GetMousePickingPosition();
-					Vec3 objectScale = Object()->Transform()->GetLocalScale();
-					Vec3 objectPosition = Object()->Transform()->GetLocalPos();
+					Vector3 objectScale = Object()->Transform()->GetLocalScale();
+					Vector3 objectPosition = Object()->Transform()->GetLocalPos();
 
 					POINT nowMousePosition;
 					nowMousePosition.x = startMousePosition.x - CKeyMgr::GetInst()->GetMousePos().x;

@@ -21,17 +21,17 @@ void CZ8BackgroundUVAniScript::start()
 	
 	if (Object()->GetName().compare(L"IntroBackGround1") == 0)
 	{
-		Vec4 colorMulValue = Vec4(2.46f, 1.49f, 1.f, 1.f);
+		Vector4 colorMulValue = Vector4(2.46f, 1.49f, 1.f, 1.f);
 		cloneMtrl->SetData(SHADER_PARAM::VEC4_0, &colorMulValue);
 	}
 	else if (Object()->GetName().compare(L"IntroBackGround2") == 0)
 	{
-		Vec4 colorMulValue = Vec4(1.53f, 1.22f, 1.f, 1.f);
+		Vector4 colorMulValue = Vector4(1.53f, 1.22f, 1.f, 1.f);
 		cloneMtrl->SetData(SHADER_PARAM::VEC4_0, &colorMulValue);
 	}
 	else if (Object()->GetName().compare(L"IntroBackGround3") == 0)
 	{
-		Vec4 colorMulValue = Vec4(1.f, 1.f, 1.f, 1.f);
+		Vector4 colorMulValue = Vector4(1.f, 1.f, 1.f, 1.f);
 		cloneMtrl->SetData(SHADER_PARAM::VEC4_0, &colorMulValue);
 	}
 }

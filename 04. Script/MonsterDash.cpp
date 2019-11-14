@@ -25,7 +25,7 @@ void MonsterDash::Move(CMonsterScript * monster)
 			dashStart = true;
 		}
 
-		Vec3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
+		Vector3 monsterPosition = monster->Object()->Transform()->GetLocalPos();
 
 		monsterPosition.x += monsterDashDirection.x*nowDashPower*DT;
 

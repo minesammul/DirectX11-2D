@@ -160,8 +160,8 @@ bool CCollisionMgr::CollisionRect(CCollider2D * _pLeft, CCollider2D * _pRight)
 
 	VTX* pVtx = (VTX*)pRectMesh->GetVtxSysMem();
 
-	Vec3 vLeftWorldPos[4] = {};
-	Vec3 vRightWorldPos[4] = {};	   
+	Vector3 vLeftWorldPos[4] = {};
+	Vector3 vRightWorldPos[4] = {};	   
 
 	for (UINT i = 0; i < 4; ++i)
 	{
@@ -175,13 +175,13 @@ bool CCollisionMgr::CollisionRect(CCollider2D * _pLeft, CCollider2D * _pRight)
 		vRightWorldPos[i].z = 0.f;
 	}
 
-	Vec3 vLeftCenter = (vLeftWorldPos[3] + vLeftWorldPos[0]) / 2.f;
-	Vec3 vRightCenter = (vRightWorldPos[3] + vRightWorldPos[0]) / 2.f;
+	Vector3 vLeftCenter = (vLeftWorldPos[3] + vLeftWorldPos[0]) / 2.f;
+	Vector3 vRightCenter = (vRightWorldPos[3] + vRightWorldPos[0]) / 2.f;
 
-	Vec3 vCenter = vLeftCenter - vRightCenter;
+	Vector3 vCenter = vLeftCenter - vRightCenter;
 
-	Vec3 vProj[4] = {};
-	Vec3 vAxis[4] = {};
+	Vector3 vProj[4] = {};
+	Vector3 vAxis[4] = {};
 
 	vProj[0] = vLeftWorldPos[0] - vLeftWorldPos[2];
 	vAxis[0] = vProj[0];	
@@ -197,7 +197,7 @@ bool CCollisionMgr::CollisionRect(CCollider2D * _pLeft, CCollider2D * _pRight)
 	
 	for (UINT i = 0; i < 4; ++i)
 	{
-		if (vAxis[i].IsZero())
+		if (vAxis[i]==Vector3::Zero)
 			return false;
 
 		vAxis[i].Normalize();

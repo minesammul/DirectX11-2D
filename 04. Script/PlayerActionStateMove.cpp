@@ -40,7 +40,7 @@ void PlayerActionStateMove::ActionState(CPlayerScript * player)
 	{
 		CreateMoveEffect(player);
 
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 
 		playerPosition.x -= player->GetMoveSpeed()*(player->GetMoveDirection().x)*DT;
 		playerPosition.y -= player->GetMoveSpeed()*(player->GetMoveDirection().y)*DT;
@@ -52,7 +52,7 @@ void PlayerActionStateMove::ActionState(CPlayerScript * player)
 	{
 		CreateMoveEffect(player);
 
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
 
 		playerPosition.x += player->GetMoveSpeed()*(player->GetMoveDirection().x)*DT;
 		playerPosition.y += player->GetMoveSpeed()*(player->GetMoveDirection().y)*DT;
@@ -98,8 +98,8 @@ void PlayerActionStateMove::CreateMoveEffect(CPlayerScript * player)
 			prefabInputScripts[scriptType] = prefabScript;
 		}
 
-		Vec3 playerPosition = player->Object()->Transform()->GetLocalPos();
-		Vec3 effectPosition = playerPosition;
+		Vector3 playerPosition = player->Object()->Transform()->GetLocalPos();
+		Vector3 effectPosition = playerPosition;
 		effectPosition.y -= player->Object()->Collider2D()->GetFinalScale().y/4;
 		player->Instantiate(moveEffect, effectPosition, prefabInputScripts);
 	}
