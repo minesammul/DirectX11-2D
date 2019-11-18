@@ -52,4 +52,5 @@ public:
 	afx_msg void OnTvnBeginlabeleditTree1(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnTvnEndlabeleditTree1(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnNMRClickTreeCreatePrefab(NMHDR *pNMHDR, LRESULT *pResult);
+	afx_msg void OnTvnKeydownTreeDeleteObject(NMHDR *pNMHDR, LRESULT *pResult);
 };

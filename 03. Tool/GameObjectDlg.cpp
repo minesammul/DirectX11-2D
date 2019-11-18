@@ -157,6 +157,7 @@ BEGIN_MESSAGE_MAP(CGameObjectDlg, CDialogEx)
 	ON_NOTIFY(TVN_BEGINLABELEDIT, IDC_TREE1, &CGameObjectDlg::OnTvnBeginlabeleditTree1)
 	ON_NOTIFY(TVN_ENDLABELEDIT, IDC_TREE1, &CGameObjectDlg::OnTvnEndlabeleditTree1)
 	ON_NOTIFY(NM_RCLICK, IDC_TREE1, &CGameObjectDlg::OnNMRClickTreeCreatePrefab)
+	ON_NOTIFY(TVN_KEYDOWN, IDC_TREE1, &CGameObjectDlg::OnTvnKeydownTreeDeleteObject)
 END_MESSAGE_MAP()
 
 
@@ -368,5 +369,31 @@ void CGameObjectDlg::OnNMRClickTreeCreatePrefab(NMHDR *pNMHDR, LRESULT *pResult)
 
 	prefab->Save();
 
+	*pResult = 0;
+}
+
+
+void CGameObjectDlg::OnTvnKeydownTreeDeleteObject(NMHDR *pNMHDR, LRESULT *pResult)
+{
+	LPNMTVKEYDOWN pTVKeyDown = reinterpret_cast<LPNMTVKEYDOWN>(pNMHDR);
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+
+	if (pTVKeyDown->wVKey == VK_DELETE)
+	{
+		HTREEITEM selectedItem = m_ctrlTree.GetSelectedItem();
+		if (selectedItem != nullptr)
+		{
+			CString selectedItemName = m_ctrlTree.GetItemText(selectedItem);
+			CGameObject* selectedGameObject = (CGameObject*)m_ctrlTree.GetItemData(selectedItem);
+
+			tEvent e = {};
+			e.eType = EVENT_TYPE::DELETE_OBJECT;
+			e.lParam = (INT_PTR)selectedGameObject;
+			CEventMgr::GetInst()->AddEvent(e);
+
+			m_ctrlTree.DeleteItem(selectedItem);
+		}
+	}
+	
 	*pResult = 0;
 }
